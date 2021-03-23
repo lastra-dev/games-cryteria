@@ -1,1 +1,1 @@
-# games-cryteria
+# Games Cryteria
