@@ -24,7 +24,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-bottom: 1.7em;
   margin-right: 9em;
 }
 
@@ -36,8 +35,24 @@
   height: 18em;
 }
 
+.home-page-cat {
+  position: absolute;
+  width: 28vw;
+  height: 25vw;
+  background-image: url(../img/cat.png);
+  background-repeat: no-repeat;
+  background-size: 22em;
+  background-position: bottom center;
+  bottom: 0vw;
+  right: 0vw;
+}
+
+.main-footer {
+  margin-top: 17em;
+}
+
 @media (max-width: 900px) {
-  .home-main-section .img-wrapper {
+  .home-page-cat {
     display: none;
   }
 
@@ -45,5 +60,3 @@
     justify-content: center;
   }
 }
-
-
