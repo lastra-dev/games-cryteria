@@ -98,7 +98,7 @@ textarea {
 body {
   padding: 0;
   margin: 0;
-  background-color: #252838;
+  background-color: #101323;
   font-family: Mulish, sans-serif;
   color: white;
 }
@@ -113,32 +113,39 @@ body {
 
 .brand-logo-name {
   font-size: 1.2em;
-  font-weight: 800;
+  font-weight: 1000;
   margin-left: 0.5rem;
 }
 
-.main-nav ul {
+.main-nav ul,
+.footer-nav ul {
   display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.main-nav a {
-  font-weight: bold;
+.main-nav a,
+.footer-nav a {
+  font-weight: 800;
   color: inherit;
   text-decoration: none;
   padding: 1rem;
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.footer-nav a:hover {
   color: #adadad;
 }
 
-.main-header {
+.main-header,
+.main-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main-header {
   height: 70px;
 }
 
@@ -149,9 +156,9 @@ body {
 }
 
 .title {
-  font-weight: 800;
-  font-size: 2.5em;
-  margin-bottom: 1rem;
+  font-weight: 1000;
+  font-size: 3em;
+  margin-bottom: 2rem;
   margin-top: 0;
 }
 
