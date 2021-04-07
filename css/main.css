@@ -11,6 +11,8 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
 html {
   color: #222;
   font-size: 1em;
@@ -86,6 +88,81 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #252838;
+  font-family: Mulish, sans-serif;
+  color: white;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.25em;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand-logo-name {
+  font-size: 1.2em;
+  font-weight: 800;
+  margin-left: 0.5rem;
+}
+
+.main-nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav a {
+  font-weight: bold;
+  color: inherit;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+.main-nav a:hover {
+  color: #adadad;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+.btn {
+  color: white;
+  background-color: #ff006b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +337,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
