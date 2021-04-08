@@ -72,7 +72,7 @@ h5 {
     font-weight: bold;
     background-image: url("../img/google icon.png");
     background-repeat: no-repeat;
-    background-position-x: 11.5rem;
+    background-position-x: 7.5rem;
     background-position-y: center;
 }
 
@@ -85,10 +85,6 @@ h5 {
     text-decoration: none;
     font-weight: bold;
   }
-
-img {
-    padding: 0rem 0rem 2rem;
-}
 
 .login-page {
     position: absolute;
