@@ -29,7 +29,7 @@
 
 .home-page-cat {
   position: absolute;
-  width: 40%;
+  width: 45%;
   height: 50%;
   background-image: url(../img/cat.png);
   background-repeat: no-repeat;
@@ -37,6 +37,7 @@
   background-position: bottom right;
   bottom: 0vw;
   right: 3vw;
+  z-index: -1;
 }
 
 /* TODO pasar a main.css, se puede reutilizar */
@@ -67,6 +68,24 @@
 .main-footer {
   position: absolute;
   bottom: 1.5vw;
+}
+
+.games-word {
+  color: #E90060;
+  font-size: 1.1em;
+}
+
+.btn:hover{
+  transform: scale(1.05);
+}
+
+.btn:active{
+  background-color: #400E32; 
+}
+
+.game-title{
+  margin-left: 0.5em;
+  font-weight: 100;
 }
 
 @media (max-width: 900px) {
