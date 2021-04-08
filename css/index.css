@@ -48,7 +48,9 @@
 }
 
 .main-footer {
-  margin-top: 17em;
+  /* margin-top: 17em; */
+  position: absolute;
+  bottom:1vw;
 }
 
 @media (max-width: 900px) {
