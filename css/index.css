@@ -1,4 +1,4 @@
-.home-main-section {
+.landing-main-section {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -6,21 +6,21 @@
   flex-grow: 1;
 }
 
-.home-main-section .msg-img {
+.landing-main-section .msg-img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-top: 5em;
 }
 
-.home-main-section .call-to-action {
+.landing-main-section .call-to-action {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   margin-right: 9em;
 }
 
-.home-page-cat {
+.landing-page-cat {
   position: absolute;
   width: 45%;
   height: 50%;
@@ -35,7 +35,7 @@
 
 /* TODO pasar a main.css, se puede reutilizar */
 /* en los demás cuadros */
-.home-main-section .landing-page-chart {
+.landing-main-section .landing-page-chart {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -48,7 +48,7 @@
   margin-left: 6em;
 }
 
-.home-main-section .landing-page-chart h3 {
+.landing-main-section .landing-page-chart h3 {
   border-radius: 5px;
   background-color: #1e233f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
@@ -82,19 +82,19 @@
 }
 
 @media (max-width: 950px) {
-  .home-page-cat {
+  .landing-page-cat {
     display: none;
   }
-  .home-main-section {
+  .landing-main-section {
     justify-content: center;
   }
-  .home-main-section .call-to-action {
+  .landing-main-section .call-to-action {
     margin-right: 0em;
   }
 }
 
 @media (max-width: 1200px) {
-  .home-main-section .landing-page-chart {
+  .landing-main-section .landing-page-chart {
     display: none;
   }
   .msg-img {
@@ -127,10 +127,10 @@
 }
 
 @media (max-height: 750px) {
-  .home-main-section .landing-page-chart {
+  .landing-main-section .landing-page-chart {
     flex-grow: 0;
   }
-  .home-page-cat {
+  .landing-page-cat {
     width: 35%;
     height: 40%;
     background-size: 19em;
@@ -138,16 +138,16 @@
 }
 
 @media (max-height: 700px) {
-  .home-page-cat {
+  .landing-page-cat {
     display: none;
   }
-  .home-main-section .landing-page-chart {
+  .landing-main-section .landing-page-chart {
     display: none;
   }
 }
 
 @media (min-height: 800px) {
-  .home-main-section .landing-page-chart {
+  .landing-main-section .landing-page-chart {
     margin-top: 8em;
   }
 }
