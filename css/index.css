@@ -2,15 +2,8 @@
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  align-self: center;
   flex-grow: 1;
-}
-
-.home-main-section .img-wrapper {
-  flex-grow: 1;
-  flex-direction: column;
-  display: flex;
-  align-items: flex;
-  justify-content: flex-end;
 }
 
 .home-main-section .msg-img {
@@ -22,8 +15,8 @@
 
 .home-main-section .call-to-action {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
   margin-right: 9em;
 }
 
@@ -43,17 +36,16 @@
 /* TODO pasar a main.css, se puede reutilizar */
 /* en los demás cuadros */
 .home-main-section .landing-page-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 0.5;
   padding: 2em;
   background-color: #171b2e;
   border-radius: 15px;
   box-shadow: 11px 6px 4px 5px rgba(0, 0, 0, 0.25);
-  margin-top: 4em;
+  margin-top: 3em;
   margin-left: 6em;
-  width: 32em;
-}
-
-.home-main-section .landing-page-chart h2 {
-  margin-bottom: 1em;
 }
 
 .home-main-section .landing-page-chart h3 {
@@ -61,6 +53,7 @@
   background-color: #1e233f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0.1em 0.5em 0.1em 0.5em;
+  margin: 11px;
 }
 
 /* TODO pasar a main.css despues de arreglar */
@@ -71,45 +64,90 @@
 }
 
 .games-word {
-  color: #E90060;
+  color: #e90060;
   font-size: 1.1em;
 }
 
-.btn:hover{
+.btn:hover {
   transform: scale(1.05);
 }
 
-.btn:active{
-  background-color: #400E32; 
+.btn:active {
+  background-color: #400e32;
 }
 
-.game-title{
+.game-title {
   margin-left: 0.5em;
   font-weight: 100;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 950px) {
   .home-page-cat {
     display: none;
   }
-
   .home-main-section {
     justify-content: center;
   }
-
   .home-main-section .call-to-action {
     margin-right: 0em;
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .home-main-section .landing-page-chart {
     display: none;
+  }
+  .msg-img {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .msg-img {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 660px) {
+  .msg-img {
+    font-size: 0.8em;
+  }
+  .msg-img img {
+    width: 1em;
+  }
+  .msg-img .call-to-action {
+    margin-top: 10em;
+  }
+}
+
+@media (max-width: 1350px) {
+  .msg-img .call-to-action {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-height: 750px) {
+  .home-main-section .landing-page-chart {
+    flex-grow: 0;
+  }
+  .home-page-cat {
+    width: 35%;
+    height: 40%;
+    background-size: 19em;
   }
 }
 
 @media (max-height: 700px) {
   .home-page-cat {
     display: none;
+  }
+  .home-main-section .landing-page-chart {
+    display: none;
+  }
+}
+
+@media (min-height: 800px) {
+  .home-main-section .landing-page-chart {
+    margin-top: 8em;
   }
 }
