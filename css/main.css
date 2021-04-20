@@ -171,6 +171,18 @@ body {
   font-weight: bold;
 }
 
+@media (max-height: 100px) {
+  .main-footer {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-nav ul {
+    display: none;
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

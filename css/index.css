@@ -1,62 +1,153 @@
-.home-main-section {
+.landing-main-section {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
+  align-self: center;
   flex-grow: 1;
 }
 
-.home-main-section .img-wrapper {
-  flex-grow: 1;
-  flex-direction: column;
-  display: flex;
-  align-items: flex;
-  justify-content: flex-end;
-}
-
-.home-main-section .msg-img {
+.landing-main-section .msg-img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 11em;
+  margin-top: 5em;
 }
 
-.home-main-section .call-to-action {
+.landing-main-section .call-to-action {
   display: flex;
-  flex-direction: column;
   align-items: flex-start;
+  flex-direction: column;
   margin-right: 9em;
 }
 
-.home-main-section .cat-image {
-  background-image: url(../img/cat.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  height: 18em;
-}
-
-.home-page-cat {
+.landing-page-cat {
   position: absolute;
-  width: 28vw;
-  height: 25vw;
+  width: 45%;
+  height: 50%;
   background-image: url(../img/cat.png);
   background-repeat: no-repeat;
   background-size: 22em;
-  background-position: bottom center;
+  background-position: bottom right;
   bottom: 0vw;
-  right: 0vw;
+  right: 3vw;
+  z-index: -1;
 }
 
+/* TODO pasar a main.css, se puede reutilizar */
+/* en los demás cuadros */
+.landing-main-section .landing-page-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-grow: 0.5;
+  padding: 2em;
+  background-color: #171b2e;
+  border-radius: 15px;
+  box-shadow: 11px 6px 4px 5px rgba(0, 0, 0, 0.25);
+  margin-top: 3em;
+  margin-left: 6em;
+}
+
+.landing-main-section .landing-page-chart h3 {
+  border-radius: 5px;
+  background-color: #1e233f;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  margin: 11px;
+}
+
+/* TODO pasar a main.css despues de arreglar */
+/* footer en todas las paginas */
 .main-footer {
-  margin-top: 17em;
+  position: absolute;
+  bottom: 1.5vw;
 }
 
-@media (max-width: 900px) {
-  .home-page-cat {
+.games-word {
+  color: #e90060;
+  font-size: 1.1em;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #400e32;
+}
+
+.game-title {
+  margin-left: 0.5em;
+  font-weight: 100;
+}
+
+@media (max-width: 950px) {
+  .landing-page-cat {
     display: none;
   }
-
-  .home-main-section {
+  .landing-main-section {
     justify-content: center;
+  }
+  .landing-main-section .call-to-action {
+    margin-right: 0em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .landing-main-section .landing-page-chart {
+    display: none;
+  }
+  .msg-img {
+    font-size: 1.5em;
+  }
+}
+
+@media (max-width: 800px) {
+  .msg-img {
+    font-size: 1.3em;
+  }
+}
+
+@media (max-width: 660px) {
+  .msg-img {
+    font-size: 0.8em;
+  }
+  .msg-img img {
+    width: 1em;
+  }
+  .msg-img .call-to-action {
+    margin-top: 10em;
+  }
+}
+
+@media (max-width: 1350px) {
+  .msg-img .call-to-action {
+    font-size: 0.8em;
+  }
+}
+
+@media (max-height: 750px) {
+  .landing-main-section .landing-page-chart {
+    flex-grow: 0;
+  }
+  .landing-page-cat {
+    width: 35%;
+    height: 40%;
+    background-size: 19em;
+  }
+}
+
+@media (max-height: 700px) {
+  .landing-page-cat {
+    display: none;
+  }
+  .landing-main-section .landing-page-chart {
+    display: none;
+  }
+}
+
+@media (min-height: 800px) {
+  .landing-main-section .landing-page-chart {
+    margin-top: 8em;
   }
 }
