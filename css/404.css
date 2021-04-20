@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+.error-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.button {
+  color: white;
+  background-color: #ff006b;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.6rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error-section .call-to-action {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 14em;
+  margin-right: 15em;
+}
+
+.error-section .call-to-action h1{
+  font-size: 43px;
+}
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+  font-family: "Luckiest Guy", cursive;
+  font-size: 140px;
+  color: #ff006b;
+  line-height: 95%;
+  margin-top: 1.5em;
+  margin-left: 1.5em;
+}
+
+.error-page-hand {
+  position: absolute;
+  width: 95%;
+  height: 90%;
+  background-image: url(../img/hand.png);
+  background-repeat: no-repeat;
+  background-size: 17em;
+  background-position: bottom right;
+  bottom: 8vw;
+  right: 0vw;
+  z-index: -1;
+}
