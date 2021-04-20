@@ -1,0 +1,104 @@
+.login-main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    margin-top: 4em;
+}
+
+.login-text {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.join-form {
+    background-color: #191D34;
+    width: 50vw;
+    max-width: 50%;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin: 0.67em 0;
+  }
+
+h5 {
+    font-size: 5em;
+    margin: 0.67em 0;
+    text-justify: auto;
+  }
+
+.join-form h4 {
+    padding: 0rem 0rem 2rem;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group:last-child {
+    margin-bottom: 0;
+}
+
+.input-group input {
+    outline: none;
+    background-color: #191D34;
+    border: 1px solid #0A8FD9;
+    font-size: 1em;
+    padding: .5em;
+    color: inherit;
+    border-radius: 5px;
+}
+
+.main-footer {
+    margin-top: 4em;
+}
+
+.btng {
+    color: white;
+    background-color: #0A8FD9;
+    padding: .75rem 1.5rem;
+    text-decoration: none;
+    font-size: .95rem;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    background-image: url("../img/google icon.png");
+    background-repeat: no-repeat;
+    background-position-x: 11.5rem;
+    background-position-y: center;
+}
+
+
+.btn1 {
+    color: white;
+    background-color: #ff006b;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+img {
+    padding: 0rem 0rem 2rem;
+}
+
+.login-page {
+    position: absolute;
+    width: 300vw;
+    height: 300vw;
+    background-image: url("../img/Background_hand_take_joystick 1.png");
+    background-repeat: no-repeat;
+    background-size: 96em;
+    background-position: bottom center;
+    bottom: 0vw;
+    right: -100vw;
+    z-index: -1;
+}
