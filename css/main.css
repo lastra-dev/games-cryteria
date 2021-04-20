@@ -145,6 +145,11 @@ body {
   align-items: center;
 }
 
+.main-footer {
+  position: absolute;
+  bottom: 1.5vw;
+}
+
 .main-header {
   height: 70px;
 }
@@ -169,6 +174,14 @@ body {
   border-radius: 0.6rem;
   text-decoration: none;
   font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: #400e32;
 }
 
 @media (max-height: 100px) {

@@ -56,24 +56,9 @@
   margin: 11px;
 }
 
-/* TODO pasar a main.css despues de arreglar */
-/* footer en todas las paginas */
-.main-footer {
-  position: absolute;
-  bottom: 1.5vw;
-}
-
 .games-word {
   color: #e90060;
   font-size: 1.1em;
-}
-
-.btn:hover {
-  transform: scale(1.05);
-}
-
-.btn:active {
-  background-color: #400e32;
 }
 
 .game-title {
