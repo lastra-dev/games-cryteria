@@ -173,7 +173,16 @@ body {
   padding: 0.75rem 1.5rem;
   border-radius: 0.6rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: bold;;
+  cursor: pointer;
+  border: none;
+}
+
+.shadow-chart{
+  padding: 2em;
+  background-color: #171b2e;
+  border-radius: 15px;
+  box-shadow: 11px 6px 4px 5px rgba(0, 0, 0, 0.25);
 }
 
 .btn:hover {
