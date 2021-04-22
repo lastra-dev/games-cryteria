@@ -103,3 +103,38 @@
   z-index: -1;
 }
 
+@media (min-height: 800px) {
+  .joystick-background {
+    background-size: 107em;
+  }
+
+  .fav-games-message{
+    margin-top: 2em;
+  }
+}
+
+@media (min-height: 900px) {
+  .joystick-background {
+    background-size: 120em;
+  }
+
+  .signin-main-section .shadow-chart {
+    margin-top: 10em;
+  }
+
+  .fav-games-message{
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .fav-games-message {
+    display: none;
+  }
+  .signin-main-section {
+    justify-content: center;
+  }
+  .signin-main-section .shadow-chart {
+    margin: 60px 0px 0px 0px;
+  }
+}
