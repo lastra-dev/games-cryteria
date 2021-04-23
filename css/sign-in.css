@@ -14,12 +14,6 @@
   margin-top: 5em;
 }
 
-.signin-text {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin: 0em 0em 1em 0em;
-}
-
 .fav-games-message {
   display: flex;
   flex-direction: column;
@@ -29,79 +23,11 @@
   margin-bottom: 5em;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: column;
-  margin-top: 2em;
-}
-
-.input-group input {
-  outline: none;
-  background-color: #191d34;
-  border: 1px solid #0a8fd9;
-  font-size: 1em;
-  padding: 0.5em;
-  color: inherit;
-  border-radius: 5px;
-  margin-bottom: 2em;
-}
-
-.btng {
-  color: white;
-  background-color: #0a8fd9;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-size: 0.95rem;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.6rem;
-  font-weight: bold;
-}
-
-.btng img {
-  margin-right: 0.3em;
-  margin-bottom: 0.1em;
-  width: 13px;
-}
-
 .btn {
   width: 17em;
 }
 
-.separator {
-  margin-top: 2em;
-  display: flex;
-  align-items: center;
-  text-align: center;
-}
 
-.separator::before,
-.separator::after {
-  content: "";
-  flex: 1;
-  border-bottom: 1px solid #ffffff;
-}
-
-.separator:not(:empty)::before {
-  margin-right: 0.25em;
-}
-
-.separator:not(:empty)::after {
-  margin-left: 0.25em;
-}
-
-.joystick-background {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/joystickhand.png");
-  background-repeat: no-repeat;
-  background-size: 96em;
-  background-position: bottom center;
-  bottom: 0vw;
-  right: 0vw;
-  z-index: -1;
-}
 
 @media (min-height: 800px) {
   .joystick-background {
