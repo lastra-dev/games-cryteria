@@ -6,6 +6,7 @@
 }
 
 .signup-main-section .shadow-chart {
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   width: 600px;
@@ -17,40 +18,19 @@
   margin: 0;
 }
 
-.join-form {
-  background-color: #191d34;
-  width: 50vw;
-  max-width: 55%;
-  padding: 2rem 4rem;
-  border-radius: 20px;
+.name-input-group input:hover {
+  transform: scale(1.03);
 }
 
-h4 {
-  font-size: 1.2em;
-  margin: 0.67em 0;
-}
-
-h5 {
-  font-size: 5em;
-  margin: 0.67em 0;
-  text-justify: auto;
-}
-
-.join-form h4 {
-  padding: 0rem 0rem 2rem;
-}
-
-.input-group {
-  margin-bottom: 2rem;
+.name-input-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  margin-top: 2em;
+  justify-content: space-between;
 }
 
-.input-group:last-child {
-  margin-bottom: 0;
-}
-
-.input-group input {
+.name-input-group input {
+  flex: 0.48;
   outline: none;
   background-color: #191d34;
   border: 1px solid #0a8fd9;
@@ -58,34 +38,6 @@ h5 {
   padding: 0.5em;
   color: inherit;
   border-radius: 5px;
-}
-
-.main-footer {
-  margin-top: 4em;
-}
-
-.btng {
-  color: white;
-  background-color: #0a8fd9;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  font-size: 0.95rem;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  border-radius: 0.6rem;
-  font-weight: bold;
-  background-image: url("../img/google icon.png");
-  background-repeat: no-repeat;
-}
-
-.btn1 {
-  color: white;
-  background-color: #ff006b;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.6rem;
-  text-decoration: none;
-  font-weight: bold;
 }
 
 .terms {
@@ -101,11 +53,18 @@ h5 {
   .signup-main-section .shadow-chart {
     width: 400px;
   }
+
+  .name-input-group input {
+    width: 0.5em;
+  }
 }
 
 @media (min-height: 800px){
   .joystick-background {
     background-size: 107em;
+  }
+  .signup-main-section .shadow-chart {
+    margin-top: 4em;
   }
 }
 
@@ -113,4 +72,7 @@ h5 {
   .joystick-background {
     background-size: 120em;
   }
-
+  .signup-main-section .shadow-chart {
+    margin-top: 7em;
+  }
+}
