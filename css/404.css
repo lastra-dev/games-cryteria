@@ -3,43 +3,79 @@
 .error-section {
   display: flex;
   align-items: stretch;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-self: center;
   flex-grow: 1;
+  margin: 200px 0px 200px 0px;
 }
 
 .error-section .call-to-action {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 14em;
-  margin-right: 15em;
 }
 
-.error-section .call-to-action h1{
-  font-size: 43px;
+.error-section .call-to-action h1 {
+  font-size: 3vw;
 }
 
 .game-over {
   display: flex;
   flex-direction: column;
   font-family: "Luckiest Guy", cursive;
-  font-size: 140px;
+  font-size: 10vw;
   color: #ff006b;
   line-height: 95%;
-  margin-top: 1.5em;
-  margin-left: 1.5em;
 }
 
 .error-page-hand {
   position: absolute;
-  width: 95%;
-  height: 90%;
+  width: 20rem;
+  height: 20rem;
   background-image: url(../img/hand.png);
   background-repeat: no-repeat;
-  background-size: 17em;
+  background-size: 13vw;
   background-position: bottom right;
-  bottom: 8vw;
+  top: 16vw;
   right: 0vw;
   z-index: -1;
+}
+
+.btn {
+  font-size: 1vw;
+}
+
+/* @media (max-height: 770px) { */
+  /* .error-page-hand { */
+    /* bottom: 4vw; */
+  /* } */
+/* } */
+/*  */
+/* @media (min-height: 800px) { */
+  /* .error-page-hand { */
+    /* background-size: 21em; */
+    /* bottom: 10em; */
+  /* } */
+/* } */
+/*  */
+/* @media (min-height: 900px) { */
+  /* .error-page-hand { */
+    /* background-size: 25em; */
+    /* bottom: 12vw; */
+  /* } */
+/* } */
+/*  */
+@media (max-width: 660px) {
+  .game-over {
+    display: none;
+  }
+  .error-section .call-to-action h1 {
+    font-size: 7vw;
+  }
+  .error-page-hand {
+    display: none;
+  }
+  .btn {
+    font-size: 3vw;
+  }
 }
