@@ -16,14 +16,14 @@
 }
 
 .error-section .call-to-action h1 {
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 
 .game-over {
   display: flex;
   flex-direction: column;
   font-family: "Luckiest Guy", cursive;
-  font-size: 10vw;
+  font-size: 8vw;
   color: #ff006b;
   line-height: 95%;
 }
@@ -34,7 +34,7 @@
   height: 20rem;
   background-image: url(../img/hand.png);
   background-repeat: no-repeat;
-  background-size: 13vw;
+  background-size: 14vw;
   background-position: bottom right;
   top: 16vw;
   right: 0vw;
@@ -45,26 +45,6 @@
   font-size: 1vw;
 }
 
-/* @media (max-height: 770px) { */
-  /* .error-page-hand { */
-    /* bottom: 4vw; */
-  /* } */
-/* } */
-/*  */
-/* @media (min-height: 800px) { */
-  /* .error-page-hand { */
-    /* background-size: 21em; */
-    /* bottom: 10em; */
-  /* } */
-/* } */
-/*  */
-/* @media (min-height: 900px) { */
-  /* .error-page-hand { */
-    /* background-size: 25em; */
-    /* bottom: 12vw; */
-  /* } */
-/* } */
-/*  */
 @media (max-width: 660px) {
   .game-over {
     display: none;
