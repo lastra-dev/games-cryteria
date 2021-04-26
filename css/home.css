@@ -1,0 +1,12 @@
+.landing-main-section {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  align-self: center;
+  flex-grow: 1;
+}
+
+.first-row, .second-row {
+  display: flex;
+  flex-direction: row;
+}
