@@ -6,7 +6,27 @@
   flex-grow: 1;
 }
 
-.first-row, .second-row {
+.first-row,
+.second-row {
   display: flex;
   flex-direction: row;
+}
+
+.first-row {
+  justify-content: space-between;
+}
+
+label {
+  margin: 1vw;
+  font-weight: bold;
+}
+
+#search-input {
+  outline: none;
+  background-color: #191d34;
+  border: 1px solid #0a8fd9;
+  color: inherit;
+  border-radius: 5px;
+  width: 25vw;
+  height: 2em;
 }
