@@ -4,11 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <!-- <link rel="stylesheet" href="css/nombreDePagina.css" /> -->
-
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
   <body class="container full-height-grow">
@@ -25,9 +23,33 @@
         </ul>
       </nav>
     </header>
-    <!-- <section class="nombreDePagina-main-section"> -->
-      <!-- aquí dentro va el contenido de la pagina excepto las imagenes -->
-    <!-- </section> -->
+    <section class="home-main-section">
+      <div class="shadow-chart">
+        <form class="first-row">
+          <div>
+            <label for="search-input">Rated Games</label>
+            <input type="search" placeholder="Search..."  name="" id="search-input"/>
+          </div>
+          <div>
+            <label for="filter">Filter</label>
+            <button
+              class="filter-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#filterSupportedContent"
+              aria-controls="filterSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle filter"
+            >
+            <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </form>
+       <div class="second-row">
+         <!-- Games Holder -->
+       </div> 
+      </div>
+    </section>
     <footer class="main-footer">
       <nav class="footer-nav">
         <ul>
