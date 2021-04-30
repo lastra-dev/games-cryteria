@@ -38,20 +38,12 @@ body {
 
 
 @media (min-height: 800px) {
-  /* .joystick-background { */
-    /* background-size: 107em; */
-  /* } */
-
   .fav-games-message{
     margin-top: 2em;
   }
 }
 
 @media (min-height: 900px) {
-  /* .joystick-background { */
-    /* background-size: 120em; */
-  /* } */
-
   .signin-main-section .shadow-chart {
     margin-top: 10em;
   }
