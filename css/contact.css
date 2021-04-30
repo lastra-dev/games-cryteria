@@ -1,0 +1,33 @@
+body {
+  background-image: url(../img/joystickhand.png);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-attachment: fixed;
+  background-position: bottom center;
+}
+
+.contact-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-main-section .shadow-chart {
+  margin-top: 7vh;
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+@media (max-width: 1000px) {
+  .contact-main-section .shadow-chart {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 660px){
+  .contact-main-section .shadow-chart {
+    margin-top: 0vh;
+  }
+}
