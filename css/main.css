@@ -173,12 +173,12 @@ body {
   padding: 0.75rem 1.5rem;
   border-radius: 0.6rem;
   text-decoration: none;
-  font-weight: bold;;
+  font-weight: bold;
   cursor: pointer;
   border: none;
 }
 
-.shadow-chart{
+.shadow-chart {
   padding: 2em;
   background-color: #171b2e;
   border-radius: 15px;
@@ -197,7 +197,8 @@ body {
   margin-top: 2em;
 }
 
-.sign-input-group input {
+.sign-input-group input,
+textarea {
   outline: none;
   background-color: #191d34;
   border: 1px solid #0a8fd9;
@@ -208,7 +209,8 @@ body {
   margin-bottom: 2em;
 }
 
-.sign-input-group input:hover {
+.sign-input-group input:hover,
+textarea:hover {
   transform: scale(1.03);
 }
 
