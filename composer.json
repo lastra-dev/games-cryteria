@@ -1,0 +1,19 @@
+{
+  "name": "lastra-dev/games-cryteria",
+  "authors": [
+    {
+      "name": "Oscar Adrián González Lastra",
+      "email": "oscar.glastra@gmail.com"
+    },
+    {
+      "name": "Eduardo Daniel Hernández Flores"
+    },
+    {
+      "name": "Luis Castillo Uvalle"
+    }
+  ],
+  "description": "Video game rating site",
+  "require": {
+    "dimuska139/rawg-sdk-php": "^1.1"
+  }
+}
