@@ -23,8 +23,8 @@ class App
       $controller = new $controller_class;
       $controller->load_model($controller_class);
 
-      $controller_method = $this->get_method_name_from($url);
-      if (isset($controller_method)) {
+      if (isset($url[1])) {
+        $controller_method = $this->get_method_name_from($url);
         $controller->{$controller_method}();
       }
     } else {
@@ -41,16 +41,20 @@ class App
 
   private function get_current_url()
   {
-    $url = $_GET['url'];
-    $url = rtrim($url, '/');
-    $url = explode('/', $url);
-    return $url;
+    if (isset($_GET['url'])) {
+      $url = $_GET['url'];
+      $url = rtrim($url, '/');
+      $url = explode('/', $url);
+      return $url;
+    }
   }
 
   private function get_controller_name_from($url)
   {
-    $controller_name = $url[0];
-    return $controller_name;
+    if (isset($_GET['url'])) {
+      $controller_name = $url[0];
+      return $controller_name;
+    }
   }
 
   private function get_method_name_from($url)

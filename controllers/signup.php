@@ -14,11 +14,15 @@ class Signup extends Controller
     $email = $_POST['email'];
     $password = hash('sha512', $_POST['password']);
 
-    $this->model->insert([
+    if ($this->model->insert([
       'username' => $username,
       'name' => $name,
       'email' => $email,
       'password' => $password
-    ]);
+    ])) {
+      echo "Account succesfully registered.";
+    } else {
+      echo "An account with that username / email already exists.";
+    }
   }
 }
