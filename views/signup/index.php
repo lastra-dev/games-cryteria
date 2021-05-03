@@ -15,7 +15,7 @@
 <body class="container full-height-grow">
   <?php require 'views/header.php' ?>
   <section class="signup-main-section">
-  <form action="<?php echo constant('URL') ?>signup/register_account" class="shadow-chart">
+    <form method="POST" action="<?php echo constant('URL') ?>signup/register_account" class="shadow-chart">
       <div class="sign-text">Sign up to Games Cryteria</div>
       <div class="sign-input-group">
         <button type="submit" class="btng"> <img src="<?php echo constant('URL') ?>public/img/googleicon.png" alt="">
@@ -24,15 +24,15 @@
       </div>
       <div class="separator">Or</div>
       <div class="name-input-group">
-        <input type="text" placeholder="Name">
-        <input type="text" placeholder="Username">
+        <input type="text" placeholder="Name" name="name" required>
+        <input type="text" placeholder="Username" name="username" required>
       </div>
       <div class="sign-input-group">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
+        <input type="email" placeholder="Email" name="email" required>
+        <input type="password" placeholder="Password" name="password" required>
       </div>
       <div class="terms">
-        <input type="checkbox">
+        <input type="checkbox" required>
         You're okay with our
         <a href="">Terms of Services</a> and <a href="">Privacy Policy</a>
       </div>

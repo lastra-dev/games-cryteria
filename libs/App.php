@@ -1,5 +1,5 @@
 <?php
-require_once 'controllers/errores.php';
+require_once 'controllers/errors.php';
 
 class App
 {
@@ -28,7 +28,7 @@ class App
         $controller->{$controller_method}();
       }
     } else {
-      $controller = new Errores();
+      $controller = new Errors();
     }
   }
 

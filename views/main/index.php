@@ -43,7 +43,7 @@
           in a trusted way.
           <img src="<?php echo constant('URL') ?>public/img/thumbsup.png" width="60em" alt="thumbsup" />
         </h1>
-        <a href="<?php echo constant('URL') ?>Home" class="btn">Get Started</a>
+        <a href="<?php echo constant('URL') ?>home" class="btn">Get Started</a>
       </div>
     </div>
   </section>
