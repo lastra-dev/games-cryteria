@@ -28,6 +28,7 @@
       </form>
       <div class="second-row">
         <!-- Games Holder -->
+        <?php var_dump($this->games_data) ?>
       </div>
     </div>
   </section>
