@@ -4,6 +4,11 @@ class Signup extends Controller
   function __construct()
   {
     parent::__construct();
+    $this->view->feedback = "";
+  }
+
+  function render()
+  {
     $this->view->render('signup/index');
   }
 
@@ -14,15 +19,20 @@ class Signup extends Controller
     $email = $_POST['email'];
     $password = hash('sha512', $_POST['password']);
 
+    $feedback = "";
+
     if ($this->model->insert([
       'username' => $username,
       'name' => $name,
       'email' => $email,
       'password' => $password
     ])) {
-      echo "Account succesfully registered.";
+      $feedback = "Account succesfully registered.";
     } else {
-      echo "An account with that username / email already exists.";
+      $feedback = "An account with that username / email already exists.";
     }
+
+    $this->view->feedback = $feedback;
+    $this->render();
   }
 }

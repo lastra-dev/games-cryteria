@@ -14,6 +14,7 @@ class App
       require_once $controller_archive;
       $controller = new Main();
       $controller->load_model($controller_class);
+      $controller->render();
       return;
     }
 
@@ -26,6 +27,8 @@ class App
       if (isset($url[1])) {
         $controller_method = $this->get_method_name_from($url);
         $controller->{$controller_method}();
+      } else {
+        $controller->render();
       }
     } else {
       $controller = new Errors();

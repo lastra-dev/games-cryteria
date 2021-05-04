@@ -1,5 +1,5 @@
 <?php
-define('URL', 'http://localhost/games-cryteria/');
+define('URL', 'http://' . $_SERVER['HTTP_HOST'] . '/games-cryteria/');
 
 define('HOST', 'localhost');
 define('DB', 'games_cryteria');

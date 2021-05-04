@@ -17,6 +17,7 @@
   <section class="signup-main-section">
     <form method="POST" action="<?php echo constant('URL') ?>signup/register_account" class="shadow-chart">
       <div class="sign-text">Sign up to Games Cryteria</div>
+      <div class="feedback"><?php echo $this->feedback ?></div>
       <div class="sign-input-group">
         <button type="submit" class="btng"> <img src="<?php echo constant('URL') ?>public/img/googleicon.png" alt="">
           Sign up with Google
