@@ -6,7 +6,8 @@
 }
 
 .shadow-chart {
-  width: 85vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-toggler {
@@ -21,10 +22,17 @@
   cursor: pointer;
 }
 
-.first-row,
-.second-row {
+.first-row {
   display: flex;
   flex-direction: row;
+}
+.second-column {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: 63vh;
+  justify-content: space-between;
+  margin-top: 3vh;
 }
 
 .first-row {
@@ -50,3 +58,34 @@ label {
   background-position: left;
   background-position-x: 8px;
 }
+
+.games-row {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.game img,
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game img {
+  margin-left: 28%;
+  width: 43%;
+  margin-bottom: 1vh;
+  border-radius: 7px;
+  box-shadow: 10px 5px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.game img:hover {
+  transform: scale(1.03);
+}
+
+.game {
+  margin: 3vh;
+}
+

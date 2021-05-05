@@ -11,7 +11,7 @@ class Home extends Controller
   {
     parent::__construct();
     $this->view->games_data = [];
-    $this->show_games();
+    // $this->show_games();
   }
 
   function render()
@@ -30,12 +30,7 @@ class Home extends Controller
       ->setTags([1, 2, 3]);
 
     $data = $client->games()->getGames($gamesFilter)->getData();
-
-    // for ($i = 0; $i < 20; $i++) {
-    // echo ($data['results'][$i]['name']);
-    // }
     $this->view->games_data = $data;
-    $this->render();
   }
 
   private function prepare_api()
