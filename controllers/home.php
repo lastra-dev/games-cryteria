@@ -33,6 +33,20 @@ class Home extends Controller
     $this->view->games_data = $data;
   }
 
+  function search_games()
+  {
+    $search = $_GET['search'];
+    $client = $this->prepare_api();
+    $gamesFilter = (new GamesFilter())
+      ->setOrdering('-metacritic')
+      ->setSearch($search)
+      ->setPrecise(false);
+
+    $data = $client->games()->getGames($gamesFilter)->getData();
+    $this->view->games_data = $data;
+    $this->render();
+  }
+
   private function prepare_api()
   {
     $cfg = new Config($_ENV['RAWG_KEY'], 'en');

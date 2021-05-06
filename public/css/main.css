@@ -270,7 +270,7 @@ textarea:hover {
   margin-left: 0.25em;
 }
 
-@media (max-width: 660px) {
+@media (max-width: 760px) {
   .main-nav ul {
     display: none;
   }
