@@ -11,7 +11,7 @@ class Home extends Controller
   {
     parent::__construct();
     $this->view->games_data = [];
-    // $this->show_games();
+    $this->show_games();
   }
 
   function render()

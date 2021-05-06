@@ -25,53 +25,18 @@
         </div>
       </form>
       <div class="second-row">
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 1</span>
-          <span>5/5</span>
-        </div>
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 2</span>
-          <span>5/5</span>
-        </div>
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 3</span>
-          <span>5/5</span>
-        </div>
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 4</span>
-          <span>5/5</span>
-        </div>
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 5</span>
-          <span>5/5</span>
-        </div>
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 6</span>
-          <span>5/5</span>
-        </div>
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 7</span>
-          <span>5/5</span>
-        </div>
-        <div class="game">
-          <img src="https://upload.wikimedia.org/wikipedia/en/4/46/Video_Game_Cover_-_The_Last_of_Us.jpg" alt="Game Img">
-          <span>TEST 8</span>
-          <span>5/5</span>
-        </div>
-      </div>
-      <!-- Games Holder 
         <?php
         foreach ($this->games_data['results'] as $game) {
-          echo $game['name'];
-        }
-        ?>-->
+        ?>
+          <div class="game">
+            <img src="<?php echo $game['background_image'] ?>" alt="Game Img">
+            <span><?php echo $game['name'] ?></span>
+            <span>5/5</span>
+          </div>
+        <?php  } ?>
+      </div>
+      <!-- Games Holder 
+        -->
     </div>
     </div>
   </section>

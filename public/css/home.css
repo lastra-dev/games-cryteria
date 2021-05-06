@@ -61,7 +61,11 @@ label {
 }
 
 .game {
+  display: flex;
+  flex-direction: column;
   margin: 3vh;
+  width: 400px;
+  justify-content: center;
 }
 
 .game img,
