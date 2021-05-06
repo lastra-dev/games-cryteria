@@ -14,10 +14,10 @@
   <?php require 'views/header.php' ?>
   <section class="home-main-section">
     <div class="shadow-chart">
-      <form class="first-row">
+      <form action="<?php echo constant('URL') ?>home/search_games" class="first-row">
         <div>
           <label for="search-input">Rated Games</label>
-          <input type="search" placeholder="Search..." name="" id="search-input" />
+          <input type="search" placeholder="Search..." name="search" id="search-input" />
         </div>
         <div id="filters">
           <label for="filter-toggler">Filter</label>
