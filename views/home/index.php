@@ -19,16 +19,25 @@
           <label for="search-input">Rated Games</label>
           <input type="search" placeholder="Search..." name="" id="search-input" />
         </div>
-        <div>
-          <label for="filter">Filter</label>
-          <button class="filter-toggler" type="button" data-toggle="collapse" data-target="#filterSupportedContent" aria-controls="filterSupportedContent" aria-expanded="false" aria-label="Toggle filter">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+        <div id="filters">
+          <label for="filter-toggler">Filter</label>
+          <input id="filter-toggler" type="image" src="<?php echo constant('URL') ?>public/img/options.png">
         </div>
       </form>
       <div class="second-row">
-        <!-- Games Holder -->
+        <?php
+        foreach ($this->games_data['results'] as $game) {
+        ?>
+          <div class="game">
+            <img src="<?php echo $game['background_image'] ?>" alt="Game Img">
+            <span><?php echo $game['name'] ?></span>
+            <span>5/5</span>
+          </div>
+        <?php  } ?>
       </div>
+      <!-- Games Holder 
+        -->
+    </div>
     </div>
   </section>
   <?php require 'views/footer.php' ?>

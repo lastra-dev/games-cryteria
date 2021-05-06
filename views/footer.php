@@ -1,4 +1,4 @@
-  <footer class="main-footer">
+  <footer id="footer">
     <nav class="footer-nav">
       <ul>
         <li><a href="<?php echo constant('URL') ?>contact">Contact</a></li>

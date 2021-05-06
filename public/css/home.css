@@ -6,19 +6,19 @@
 }
 
 .shadow-chart {
-  width: 85vw;
+  display: flex;
+  flex-direction: column;
 }
 
-.filter-toggler {
-  width: 1.4em;
-  height: 2em;
-  background-color: inherit;
-  border-width: 0;
-  background-image: url(../img/options.png);
-  background-repeat: no-repeat;
-  background-size: 1.5em;
-  background-position: center;
-  cursor: pointer;
+#filter-toggler {
+  margin-top: 16px;
+  width: 20px;
+  height: 20px;
+}
+
+#filters {
+  display: flex;
+  flex-direction: row;
 }
 
 .first-row,
@@ -29,6 +29,15 @@
 
 .first-row {
   justify-content: space-between;
+}
+
+.second-row {
+  overflow-y: scroll;
+  height: 64vh;
+  justify-content: space-between;
+  margin-top: 3vh;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 label {
@@ -42,11 +51,38 @@ label {
   border: 1px solid #0a8fd9;
   color: inherit;
   border-radius: 5px;
-  width: 25vw;
+  width: 65%;
   height: 2em;
   padding: 0px 35px 0px 35px;
   background: url(../img/search.svg) no-repeat scroll;
   background-size: 1.2em;
   background-position: left;
   background-position-x: 8px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  margin: 3vh;
+  width: 400px;
+  justify-content: center;
+}
+
+.game img,
+span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.game img {
+  margin-left: 28%;
+  width: 43%;
+  margin-bottom: 1vh;
+  border-radius: 7px;
+  box-shadow: 10px 5px 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+.game img:hover {
+  transform: scale(1.03);
 }
