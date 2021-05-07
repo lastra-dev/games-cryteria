@@ -14,7 +14,7 @@
   <?php require 'views/header.php' ?>
   <section class="home-main-section">
     <div class="shadow-chart">
-      <form action="<?php echo constant('URL') ?>home/search_games" class="first-row">
+      <form action="<?php echo constant('URL') ?>home/custom_search" class="first-row">
         <div>
           <label for="search-input">Rated Games</label>
           <input type="search" placeholder="Search..." name="search" id="search-input" />
@@ -31,12 +31,22 @@
           <div class="game">
             <img src="<?php echo $game['background_image'] ?>" alt="Game Img">
             <span><?php echo $game['name'] ?></span>
-            <span>5/5</span>
+            <span>
+              <?php
+              $rating = "Not rated yet";
+              foreach ($this->ratings as $r) {
+                if ($r->id == $game['id']) {
+                  $rating = 'GC Rating: ' . $r->rating . '/5';
+                  break 1;
+                }
+              }
+              echo $rating;
+              ?>
+            </span>
           </div>
         <?php  } ?>
       </div>
-      <!-- Games Holder 
-        -->
+      <div id="rawg">Powered by RAWG</div>
     </div>
     </div>
   </section>

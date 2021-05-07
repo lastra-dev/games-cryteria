@@ -11,15 +11,17 @@ class Home extends Controller
   {
     parent::__construct();
     $this->view->games_data = [];
+    $this->view->ratings = [];
     $this->show_games();
   }
 
   function render()
   {
+    $this->get_ratings();
     $this->view->render('home/index');
   }
 
-  function show_games()
+  private function show_games()
   {
     $client = $this->prepare_api();
     $gamesFilter = (new GamesFilter())
@@ -33,7 +35,13 @@ class Home extends Controller
     $this->view->games_data = $data;
   }
 
-  function search_games()
+  private function get_ratings()
+  {
+    $ratings = $this->model->get();
+    $this->view->ratings = $ratings;
+  }
+
+  function custom_search()
   {
     $search = $_GET['search'];
     $client = $this->prepare_api();
