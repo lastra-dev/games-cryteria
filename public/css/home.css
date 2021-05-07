@@ -1,5 +1,5 @@
 .home-main-section {
-  margin-top: 1vw;
+  /* margin-top: 1vw; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -85,4 +85,12 @@ span {
 
 .game img:hover {
   transform: scale(1.03);
+}
+
+#rawg {
+  font-size: 12px;
+}
+
+.checked {
+  color: #FF006B;
 }
