@@ -45,6 +45,7 @@
               Where to buy
             </div>
             <img src="" alt="">
+            <div>Powered by RAWG</div>
           </div>
           <div class="your-rating">
             <div class="subtitle">
@@ -111,7 +112,6 @@
           </div>
         </div>
       </div>
-    </div>
     </div>
   </section>
   <?php require 'views/footer.php' ?>

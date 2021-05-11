@@ -6,7 +6,7 @@
     <nav class="main-nav">
       <ul>
         <li><a href="<?php echo constant('URL') ?>home">Home</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a href="<?php echo constant('URL') ?>blog">Blog</a></li>
         <li><a target="_blank" href="https://discord.gg/fea98vxckk">Discord</a></li>
         <?php
         if (isset($_SESSION['id'])) {
