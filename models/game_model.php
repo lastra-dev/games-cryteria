@@ -38,7 +38,7 @@ class Game_model extends Model
   {
     try {
       $query = $this->db->connect()->prepare(
-        "INSERT INTO account_ratings VALUES
+        "CALL insert_rating
         (:accountId, :gameId, :rating)"
       );
       $query->execute([

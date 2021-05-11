@@ -35,28 +35,34 @@ class Game extends Controller
 
   function rate()
   {
-    $rating = $_POST['submit'];
-    $feedback = "";
+    if (isset($_SESSION['id'])) {
+      $rating = $_POST['submit'];
+      $feedback = "";
 
-    if ($this->model->set_rating([
-      'gameId' => $this->gameId,
-      'rating' => $rating
-    ])) {
-      $feedback = "Succesfully rated!";
+      if ($this->model->set_rating([
+        'gameId' => $this->gameId,
+        'rating' => $rating
+      ])) {
+        $feedback = "Succesfully rated!";
+      } else {
+        $feedback = "There was an error with your submition.";
+      }
+      $this->view->feedback = $feedback;
+      $this->render();
     } else {
-      $feedback = "There was an error with your submition.";
+      header('Location: ' . constant('URL') . 'signin');
     }
-    $this->view->feedback = $feedback;
-    $this->render();
   }
 
   function get_acc_rating()
   {
-    if ($row = $this->model->get_user_rating([
-      'gameId' => $this->gameId
-    ])) {
-      $result = $row['rating'];
-      $this->view->accRating = $result;
+    if (isset($_SESSION['id'])) {
+      if ($row = $this->model->get_user_rating([
+        'gameId' => $this->gameId
+      ])) {
+        $result = $row['rating'];
+        $this->view->accRating = $result;
+      }
     }
   }
 }
