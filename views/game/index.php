@@ -50,22 +50,24 @@
             <div class="subtitle">
               Rate this game
             </div>
-            <form action="<?php echo constant('URL') ?>game/rate?gameId=51325" method="POST" class="stars">
-              <button id="star1-submit" type="submit" name="submit" value="1">
-                <i class='fas fa-star'></i>
-              </button>
-              <button id="star2-submit" type="submit" name="submit" value="2">
-                <i class='fas fa-star'></i>
-              </button>
-              <button id="star3-submit" type="submit" name="submit" value="3">
-                <i class='fas fa-star'></i>
-              </button>
-              <button id="star4-submit" type="submit" name="submit" value="4">
-                <i class='fas fa-star'></i>
-              </button>
-              <button id="star5-submit" type="submit" name="submit" value="5">
-                <i class='fas fa-star'></i>
-              </button>
+            <form action="<?php echo constant('URL') ?>game/rate?gameId=<?php echo $this->data['id'] ?>" method="POST" class="stars">
+
+              <?php
+              for ($i = 1; $i < 6; $i++) {
+                if ($i < $this->accRating + 1) {
+                  echo "
+                    <button id='star{$i}-submit' type='submit' name='submit' value='{$i}'>
+                      <i class='fas fa-star checked'></i>
+                    </button>";
+                } else {
+                  echo "
+                    <button id='star{$i}-submit' type='submit' name='submit' value='{$i}'>
+                      <i class='fas fa-star'></i>
+                    </button>";
+                }
+              }
+              ?>
+
             </form>
             <div class="feedback"><?php echo $this->feedback ?></div>
           </div>

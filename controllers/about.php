@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 class About extends Controller
 {
   function __construct()

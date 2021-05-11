@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 class Contact extends Controller
 {
   function __construct()

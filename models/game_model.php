@@ -39,13 +39,36 @@ class Game_model extends Model
     try {
       $query = $this->db->connect()->prepare(
         "INSERT INTO account_ratings VALUES
-        (1, :gameId, :rating)"
+        (:accountId, :gameId, :rating)"
       );
       $query->execute([
+        'accountId' => $_SESSION['id'],
         'gameId' => $data['gameId'],
         'rating' => $data['rating'],
       ]);
       return true;
+    } catch (PDOException) {
+      return false;
+    }
+  }
+
+  public function get_user_rating($data)
+  {
+    try {
+      $query = $this->db->connect()->prepare(
+        "SELECT rating FROM account_ratings 
+         WHERE game_id = :gameId AND account_id = :accountId"
+      );
+      $query->execute([
+        'gameId' => $data['gameId'],
+        'accountId' => $_SESSION['id']
+      ]);
+      $result = $query->fetch();
+      if ($result) {
+        return $result;
+      } else {
+        return false;
+      }
     } catch (PDOException) {
       return false;
     }

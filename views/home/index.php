@@ -12,7 +12,9 @@
 </head>
 
 <body class="container full-height-grow">
-  <?php require 'views/header.php' ?>
+  <?php
+  require 'views/header.php'
+  ?>
   <section class="home-main-section">
     <div class="shadow-chart">
       <form action="<?php echo constant('URL') ?>home/custom_search" class="first-row">
