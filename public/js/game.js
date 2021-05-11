@@ -1,63 +1,67 @@
-$("#star1").hover(
+$("#star1-submit").hover(
   function () {
-    $("#star1").css({
+    $("#star1-submit").css({
       color: "#ff006b",
     });
   },
   function () {
-    $("#star1").css({
+    $("#star1-submit").css({
       color: "white",
     });
   }
 );
 
-$("#star2").hover(
+$("#star2-submit").hover(
   function () {
-    $("#star1, #star2").css({
+    $("#star1-submit, #star2-submit").css({
       color: "#ff006b",
     });
   },
   function () {
-    $("#star1, #star2").css({
+    $("#star1-submit, #star2-submit").css({
       color: "white",
     });
   }
 );
 
-$("#star3").hover(
+$("#star3-submit").hover(
   function () {
-    $("#star1, #star2, #star3").css({
+    $("#star1-submit, #star2-submit, #star3-submit").css({
       color: "#ff006b",
     });
   },
   function () {
-    $("#star1, #star2, #star3").css({
+    $("#star1-submit, #star2-submit, #star3-submit").css({
       color: "white",
     });
   }
 );
 
-$("#star4").hover(
+$("#star4-submit").hover(
   function () {
-    $("#star1, #star2, #star3, #star4").css({
+    $("#star1-submit, #star2-submit, #star3-submit, #star4-submit").css({
       color: "#ff006b",
     });
   },
   function () {
-    $("#star1, #star2, #star3, #star4").css({
+    $("#star1-submit, #star2-submit, #star3-submit, #star4-submit").css({
       color: "white",
     });
   }
 );
 
-$("#star5").hover(
+$("#star5-submit").hover(
   function () {
-    $("#star1, #star2, #star3, #star4, #star5").css({
+    $(
+      "#star1-submit, #star2-submit, #star3-submit, #star4-submit, #star5-submit"
+    ).css({
       color: "#ff006b",
     });
   },
   function () {
-    $("#star1, #star2, #star3, #star4, #star5").css({
+    $(
+      "#star1-submit, #star2-submit, #star3-submit, #star4-submit, #star5-submit"
+    ).css({
       color: "white",
     });
   }

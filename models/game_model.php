@@ -33,4 +33,21 @@ class Game_model extends Model
       return "Not rated yet";
     }
   }
+
+  public function set_rating($data)
+  {
+    try {
+      $query = $this->db->connect()->prepare(
+        "INSERT INTO account_ratings VALUES
+        (1, :gameId, :rating)"
+      );
+      $query->execute([
+        'gameId' => $data['gameId'],
+        'rating' => $data['rating'],
+      ]);
+      return true;
+    } catch (PDOException) {
+      return false;
+    }
+  }
 }

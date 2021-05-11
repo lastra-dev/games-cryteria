@@ -50,27 +50,28 @@
             <div class="subtitle">
               Rate this game
             </div>
-            <div class="stars">
-              <a id="star1" href="">
+            <form action="<?php echo constant('URL') ?>game/rate?gameId=51325" method="POST" class="stars">
+              <button id="star1-submit" type="submit" name="submit" value="1">
                 <i class='fas fa-star'></i>
-              </a>
-              <a id="star2" href="">
+              </button>
+              <button id="star2-submit" type="submit" name="submit" value="2">
                 <i class='fas fa-star'></i>
-              </a>
-              <a id="star3" href="">
+              </button>
+              <button id="star3-submit" type="submit" name="submit" value="3">
                 <i class='fas fa-star'></i>
-              </a>
-              <a id="star4" href="">
+              </button>
+              <button id="star4-submit" type="submit" name="submit" value="4">
                 <i class='fas fa-star'></i>
-              </a>
-              <a id="star5" href="">
+              </button>
+              <button id="star5-submit" type="submit" name="submit" value="5">
                 <i class='fas fa-star'></i>
-              </a>
-            </div>
+              </button>
+            </form>
+            <div class="feedback"><?php echo $this->feedback ?></div>
           </div>
         </div>
       </div>
-      <div class="column" id="second-column">
+      <div class="second-column">
         <img width="250px" src="<?php echo $this->data['background_image'] ?>" alt="">
         <div class="gc-rating">
           <div class="subtitle">
@@ -98,20 +99,20 @@
             }
             ?>
           </div>
-          <div class="metacritic-rating">
-            <div class="subtitle">
-              Metacritic rating
-            </div>
-            <div>
-              <?php echo $this->data['metacritic'] ?>
-            </div>
+        </div>
+        <div class="metacritic-rating">
+          <div class="subtitle">
+            Metacritic rating
+          </div>
+          <div>
+            <?php echo $this->data['metacritic'] ?>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
   <?php require 'views/footer.php' ?>
-
   <script src="<?php echo constant('URL') ?>public/js/game.js"></script>
 </body>
 

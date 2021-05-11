@@ -7,6 +7,7 @@ class Game extends Controller
     $this->gameId = $_GET['gameId'];
     $this->view->data = [];
     $this->view->gcRating = "Not rated yet";
+    $this->view->feedback = "";
   }
 
   function render()
@@ -26,5 +27,22 @@ class Game extends Controller
   {
     $gcRating = $this->model->get_rating($gameId);
     $this->view->gcRating = $gcRating;
+  }
+
+  function rate()
+  {
+    $rating = $_POST['submit'];
+    $feedback = "";
+
+    if ($this->model->set_rating([
+      'gameId' => $this->gameId,
+      'rating' => $rating
+    ])) {
+      $feedback = "Succesfully rated!";
+    } else {
+      $feedback = "There was an error with your submition.";
+    }
+    $this->view->feedback = $feedback;
+    $this->render();
   }
 }
