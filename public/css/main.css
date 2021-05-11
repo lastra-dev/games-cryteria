@@ -276,6 +276,10 @@ textarea:hover {
   }
 }
 
+.checked {
+  color: #ff006b;
+}
+
 /* Scrollbar */
 /* width */
 ::-webkit-scrollbar {

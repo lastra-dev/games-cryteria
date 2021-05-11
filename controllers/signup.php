@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 class Signup extends Controller
 {
   function __construct()

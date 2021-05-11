@@ -1,4 +1,5 @@
-<?php
+<?php 
+session_start();
 
 use Rawg\ApiClient;
 use Rawg\Config;
