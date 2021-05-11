@@ -1,0 +1,26 @@
+.shadow-chart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  font-size: 17px;
+  margin-bottom: 3vh;
+}
+
+li img {
+  margin-right: 2vw;
+  border-radius: 5px;
+}
+
+li a {
+  text-decoration: none;
+  color: #ff006b;
+}
