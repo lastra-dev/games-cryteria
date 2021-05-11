@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/home.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/ebb32ee94c.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="container full-height-grow">
@@ -30,7 +30,11 @@
         foreach ($this->games_data['results'] as $game) {
         ?>
           <div class="game">
-            <img src="<?php echo $game['background_image'] ?>" alt="Game Img">
+            <a href="<?php
+                      echo constant('URL') . 'game?gameId=' . $game['id'];
+                      ?>">
+              <img src="<?php echo $game['background_image'] ?>" alt="Game Img">
+            </a>
             <span><?php echo $game['name'] ?></span>
             <span>
               <?php
@@ -49,8 +53,8 @@
             </span>
             <span class="stars">
               <?php
-              $checkedStar = "<span class='fa fa-star checked'></span>";
-              $star = "<span class='fa fa-star'></span>";
+              $checkedStar = "<span class='fas fa-star checked'></span>";
+              $star = "<span class='fas fa-star'></span>";
               echo str_repeat($checkedStar, $rating);
               echo str_repeat($star, 5 - floor($rating));
               ?>

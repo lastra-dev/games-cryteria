@@ -1,0 +1,58 @@
+body {
+  background-size: cover;
+}
+
+#more {
+  display: none;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1vw;
+}
+#second-column {
+  align-items: center;
+}
+
+.shadow-chart {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  height: 85vh;
+}
+
+.main-header {
+  width: 100%;
+}
+
+.game-main-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-title {
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+.stars a {
+  text-decoration: none;
+  color: white;
+}
+
+.stars a:hover {
+  color: #ff006b;
+}
+
