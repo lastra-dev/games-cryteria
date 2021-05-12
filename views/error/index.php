@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/error.css" />
-
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
 <body class="container full-height-grow">

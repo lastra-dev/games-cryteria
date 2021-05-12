@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/article.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   <script src="https://kit.fontawesome.com/ebb32ee94c.js" crossorigin="anonymous"></script>
 </head>
 

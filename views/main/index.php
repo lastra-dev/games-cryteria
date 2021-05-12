@@ -14,7 +14,7 @@
 
   <!-- <link rel="manifest" href="public/site.webmanifest" /> -->
   <link rel="apple-touch-icon" href="icon.png" />
-  <!-- Place favicon.ico in the root directory -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
