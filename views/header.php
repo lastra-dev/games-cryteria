@@ -11,10 +11,10 @@
         <?php
         if (isset($_SESSION['id'])) {
         ?>
-          <li><a href="<?php echo constant('URL') ?>signout">Sign out</a></li>
+          <li><a href="<?php echo constant('URL') ?>signout">Sign Out</a></li>
         <?php  } else { ?>
-          <li><a href="<?php echo constant('URL') ?>signin">Sign in</a></li>
-          <li><a href="<?php echo constant('URL') ?>signup">Sign up</a></li>
+          <li><a href="<?php echo constant('URL') ?>signin">Sign In</a></li>
+          <li><a href="<?php echo constant('URL') ?>signup">Sign Up</a></li>
         <?php } ?>
       </ul>
     </nav>

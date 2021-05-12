@@ -6,46 +6,18 @@ body {
   background-position: bottom center;
 }
 
-.about-us-main-section {
+.about-main-section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.about-us-main-section .shadow-chart {
-  margin-top: 7vh;
+.about-main-section .shadow-chart {
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
-.about-us {
-  background: none;
-  font-size: 1.2em;
-  color: white;
-  text-align: justify;
-  padding: 3em 0em 3em 0em;
-}
-
-@media (max-width: 1000px) {
-  .about-us-main-section .shadow-chart {
-    width: 80vw;
-  }
-  .about-us {
-    padding: 1em 0em 1em 0em;
-  }
-}
-
-@media (max-width: 660px){
-  .about-us {
-    font-size: 16px;
-    padding: 0em;
-  }
-  .sign-text{
-    font-size: 18px;
-  }
-  .about-us-main-section .shadow-chart {
-    margin-top: 0vh;
-  }
-}

@@ -131,6 +131,7 @@ body {
   color: inherit;
   text-decoration: none;
   padding: 1rem;
+  font-size: 16px;
 }
 
 .main-nav a:hover,
@@ -146,11 +147,11 @@ body {
 
 #footer {
   position: fixed;
-  padding: 5px 10px 0px 33px;
+  padding-left: 3vw;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 30px;
+  height: 3%;
   background-color: #0e101b;
 }
 
