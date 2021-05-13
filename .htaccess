@@ -7,3 +7,12 @@ AddType text/css .css
 
 php_flag display_startup_errors on
 php_flag display_errors on
+
+# Disable Directory listing
+Options -Indexes
+
+# block files which needs to be hidden, specify .example extension of the file
+<Files ~ "\.(env|json|config.js|md|gitignore|gitattributes|lock)$">
+    Order allow,deny
+    Deny from all
+</Files>
