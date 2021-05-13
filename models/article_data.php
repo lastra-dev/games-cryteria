@@ -8,6 +8,9 @@ class Article_data
     $this->article1->id = 1;
     $this->article1->title = "Juegos que Marcaron Infancias";
     $this->article1->image = "https://i.imgur.com/jQp4gVl.jpg";
+    $this->article1->description = "En muchos de nosotros los juegos forman una parte de nuestras vidas, por eso te traemos Juegos que recordaras con Nostalgia.";
+    $this->article1->keywords = "Super Mario 64, Metal Slug, Contra, Mega-Man, Street Figter, Game Blog, Blog de Juegos";
+    $this->article1->author = "Eduardo Daniel Hernández Flores";
     $this->article1->body = "
 <p>En muchos de nosotros los juegos forman una parte de nuestras vidas, incluso 
 muchos de nosotros recordamos algunos juegos con gran nostalgia, ya que posiblemente
@@ -46,6 +49,8 @@ uno lo recordara con gran nostalgia, un titulo que te entregaba horas incontable
     $this->article2->id = 0;
     $this->article2->title = "¿Qué representan los videojuegos hoy en día?";
     $this->article2->image = "https://i.imgur.com/QA5aG6j.jpg";
+    $this->article2->description = "Los videojuegos ya no son solo un método de entretenimiento, han evolucionado y ahora existen en distintas áreas.";
+    $this->article2->keywords = "Educación, Psicología, Ambientes Empresariales, Arquitectura, videojuegos, games blog, rating";
     $this->article2->body = "
 <p>“Un videojuego es una aplicación interactiva orientada al entretenimiento
  que a través de ciertos mandos o controles permite simular experiencias en la

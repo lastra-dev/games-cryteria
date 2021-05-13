@@ -3,11 +3,13 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Games Cryteria</title>
-  <meta name="description" content="" />
+  <title>Games Cryteria - Rate and review games in a trusted way</title>
+  <meta name="description" content="Games Cryteria helps you review a variety of games, learn from them, rate them, and see other people's scores." />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="games, rating, videogames, review, game blog">
+  <meta name="author" content="Oscar Lastra">
 
-  <meta property="og:title" content="" />
+  <meta property="og:title" content="Games Cryteria - Rate and review games in a trusted way" />
   <meta property="og:type" content="" />
   <meta property="og:url" content="" />
   <meta property="og:image" content="" />

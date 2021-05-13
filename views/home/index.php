@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Games</title>
+  <meta name="description" content="Games Cryteria helps you review a variety of games, learn from them, rate them, and see other people's scores." />
+  <meta name="keywords" content="games, rating, videogames, review, game blog">
+
+  <title>Games - Games Cryteria</title>
+
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/home.css" />
@@ -36,7 +40,7 @@
             <a href="<?php
                       echo constant('URL') . 'game?gameId=' . $game['id'];
                       ?>">
-              <img src="<?php echo $game['background_image'] ?>" alt="Game Img">
+              <img src="<?php echo $game['background_image'] ?>" alt="Game Image">
             </a>
             <span><?php echo $game['name'] ?></span>
             <span>

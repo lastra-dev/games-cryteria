@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php echo $this->data['name'] ?></title>
+  <meta name="description" content="Games Cryteria helps you review a variety of games, learn from them, rate them, and see other people's scores." />
+  <meta name="keywords" content="games, rating, videogames, review, game blog">
+  <meta name="author" content="Oscar Lastra">
+
+  <title><?php echo $this->data['name'] ?> - Games Cryteria</title>
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/game.css" />
@@ -45,7 +49,7 @@
             <div class="subtitle">
               Where to buy
             </div>
-            <img src="" alt="">
+            <!--<img src="" alt="">-->
             <div>Powered by RAWG</div>
           </div>
           <div class="your-rating">

@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog</title>
+  <meta name="description" content="<?php echo $this->data->description ?>" />
+  <meta name="keywords" content="<?php echo $this->data->keywords ?>">
+  <meta name="author" content="<?php echo $this->data->author ?>">
+
+  <title><?php echo $this->data->title ?> - Games Cryteria</title>
 
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
@@ -24,7 +28,7 @@
         ?>
       </div>
       <div class="image">
-        <img src="<?php echo $this->data->image ?>" width="50%" alt="">
+        <img src="<?php echo $this->data->image ?>" width="50%" alt="Blog image">
       </div>
       <div class="share">
         <div class="subtitle"> Share </div>

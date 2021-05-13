@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign up</title>
+  <meta name="description" content="Games Cryteria helps you review a variety of games, learn from them, rate them, and see other people's scores." />
+  <meta name="keywords" content="games, rating, videogames, review, game blog">
+  <meta name="author" content="Oscar Lastra">
+
+  <title>Sign Up - Games Cryteria</title>
 
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
@@ -20,7 +24,7 @@
       <div class="sign-text">Sign up to Games Cryteria</div>
       <div class="feedback"><?php echo $this->feedback ?></div>
       <div class="sign-input-group">
-        <button type="submit" class="btng"> <img src="<?php echo constant('URL') ?>public/img/googleicon.png" alt="">
+        <button type="submit" class="btng"> <img src="<?php echo constant('URL') ?>public/img/googleicon.png" alt="Google Icon">
           Sign up with Google
         </button>
       </div>
