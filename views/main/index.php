@@ -51,6 +51,7 @@
   </section>
   <div class="landing-page-cat"></div>
   <?php require 'views/footer.php' ?>
+  <script src="<?php echo constant('URL') ?>public/js/main.js"></script>
   <!-- require 'views/analytics.php' ?> -->
 </body>
 
