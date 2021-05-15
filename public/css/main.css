@@ -95,12 +95,44 @@ textarea {
   box-sizing: border-box;
 }
 
-nav {
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #101323;
+  font-family: Mulish, sans-serif;
+  color: white;
+}
+
+#container {
+  min-height: 92%;
+}
+
+#main {
+  overflow: auto;
+  padding-bottom: 100px;
+}
+
+#footer {
+  position: relative;
+  height: 30px;
+  margin-top: -30px;
+  clear: both;
+}
+
+#header-nav,
+#footer-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+#header-nav {
   min-height: 8vh;
 }
+
 .nav-links,
 .footer-links {
   display: flex;
@@ -125,10 +157,6 @@ nav {
 .nav-links li,
 .footer-links li {
   list-style: none;
-}
-
-#footer {
-  margin-top: 10vh;
 }
 
 .burger {
@@ -169,8 +197,8 @@ nav {
   .nav-links {
     position: absolute;
     right: 0px;
-    height: 92vh;
-    top: 8vh;
+    height: 96vh;
+    top: 4vh;
     background-color: #0e101b;
     display: flex;
     flex-direction: column;
@@ -182,7 +210,7 @@ nav {
     opacity: 0;
   }
   .footer-links {
-    width: 25%;
+    width: 28%;
   }
   .burger {
     display: block;
@@ -212,12 +240,6 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -5px);
-}
-
-body {
-  background-color: #101323;
-  font-family: Mulish, sans-serif;
-  color: white;
 }
 
 .brand-logo {

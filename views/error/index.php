@@ -12,13 +12,15 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="container full-height-grow">
+<body>
   <?php require 'views/header.php' ?>
-  <section class="error-section">
-    <div class="game-over">GAME<br>OVER!</div>
-    <div class="call-to-action">
-      <h1>Sorry! page not found</h1>
-      <a href="<?php echo constant('URL') ?>" class="btn">Back to start</a>
+  <section id="container">
+    <div class="error-section main">
+      <div class="game-over">GAME<br>OVER!</div>
+      <div class="call-to-action">
+        <h1>Sorry! page not found</h1>
+        <a href="<?php echo constant('URL') ?>" class="btn">Back to start</a>
+      </div>
     </div>
   </section>
   <div class="error-page-hand"></div>

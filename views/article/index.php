@@ -17,10 +17,10 @@
   <script src="https://kit.fontawesome.com/ebb32ee94c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="container full-height-grow">
+<body>
   <?php require 'views/header.php' ?>
-  <section class="article-section">
-    <div class="shadow-chart">
+  <section id="container">
+    <div class="shadow-chart main">
       <h1><?php echo $this->data->title ?></h1>
       <div class="cuerpo">
         <?php

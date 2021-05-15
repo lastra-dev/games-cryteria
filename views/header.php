@@ -1,5 +1,5 @@
   <header>
-    <nav>
+    <nav id="header-nav">
       <a href="<?php echo constant('URL') ?>" class="brand-logo">
         <img src="<?php echo constant('URL') ?>public/img/logo.png" width="33" alt="logo" />
         <div class="brand-logo-name">Games Cryteria</div>

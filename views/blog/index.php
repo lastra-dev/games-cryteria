@@ -16,14 +16,14 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="container full-height-grow">
+<body>
   <?php require 'views/header.php' ?>
-  <section class="blog-section">
-    <div class="shadow-chart">
+  <section id="container">
+    <div class="shadow-chart main">
       <h1>Blog</h1>
       <h2>Artículos Destacados</h2>
       <hr>
-      <ul>
+      <ul class="articles">
         <li>
           <a href="<?php echo constant('URL') ?>article?artId=0">
             <img src="https://venturebeat.com/wp-content/uploads/2016/06/supermario64.png?w=1200&strip=all" width="200px" alt="Super Mario 64">

@@ -19,31 +19,33 @@
 
 <body class="container full-height-grow">
   <?php require 'views/header.php' ?>
-  <section class="signup-main-section">
-    <form method="POST" action="<?php echo constant('URL') ?>signup/register_account" class="shadow-chart">
-      <div class="sign-text">Sign up to Games Cryteria</div>
-      <div class="feedback"><?php echo $this->feedback ?></div>
-      <div class="sign-input-group">
-        <button type="submit" class="btng"> <img src="<?php echo constant('URL') ?>public/img/googleicon.png" alt="Google Icon">
-          Sign up with Google
-        </button>
-      </div>
-      <div class="separator">Or</div>
-      <div class="name-input-group">
-        <input type="text" placeholder="Name" name="name" required>
-        <input type="text" placeholder="Username" name="username" required>
-      </div>
-      <div class="sign-input-group">
-        <input type="email" placeholder="Email" name="email" required>
-        <input type="password" placeholder="Password" name="password" required>
-      </div>
-      <div class="terms">
-        <input type="checkbox" required>
-        You're okay with our
-        <a href="">Terms of Services</a> and <a href="">Privacy Policy</a>
-      </div>
-      <button type="submit" class="btn">Sign up</button>
-    </form>
+  <section id="container">
+    <div class="signup-main-section main">
+      <form method="POST" action="<?php echo constant('URL') ?>signup/register_account" class="shadow-chart">
+        <div class="sign-text">Sign up to Games Cryteria</div>
+        <div class="feedback"><?php echo $this->feedback ?></div>
+        <div class="sign-input-group">
+          <button type="submit" class="btng"> <img src="<?php echo constant('URL') ?>public/img/googleicon.png" alt="Google Icon">
+            Sign up with Google
+          </button>
+        </div>
+        <div class="separator">Or</div>
+        <div class="name-input-group">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Username" name="username" required>
+        </div>
+        <div class="sign-input-group">
+          <input type="email" placeholder="Email" name="email" required>
+          <input type="password" placeholder="Password" name="password" required>
+        </div>
+        <div class="terms">
+          <input type="checkbox" required>
+          You're okay with our
+          <a href="">Terms of Services</a> and <a href="">Privacy Policy</a>
+        </div>
+        <button type="submit" class="btn">Sign up</button>
+      </form>
+    </div>
   </section>
   <?php require 'views/footer.php' ?>
   <script src="<?php echo constant('URL') ?>public/js/main.js"></script>

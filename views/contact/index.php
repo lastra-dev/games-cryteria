@@ -15,20 +15,22 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
-<body class="container full-height-grow">
+<body>
   <?php require 'views/header.php' ?>
-  <section class="contact-main-section">
-    <form class="shadow-chart">
-      <div class="sign-text">Contact us</div>
-      <div class="sign-input-group">
-        <form action="contact_submit" method="get" accept-charset="utf-8">
-          <input type="text" placeholder="Name">
-          <input type="email" placeholder="Email">
-          <textarea name="message" placeholder="Enter your message.." cols="40" rows="5"></textarea>
-          <button type="submit" class="btn">Send Message</button>
-        </form>
-      </div>
-    </form>
+  <section id="container">
+    <div class="contact-main-section main">
+      <form class="shadow-chart">
+        <div class="sign-text">Contact us</div>
+        <div class="sign-input-group">
+          <form action="contact_submit" method="get" accept-charset="utf-8">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Email">
+            <textarea name="message" placeholder="Enter your message.." cols="40" rows="5"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+          </form>
+        </div>
+      </form>
+    </div>
   </section>
   <?php require 'views/footer.php' ?>
   <script src="<?php echo constant('URL') ?>public/js/main.js"></script>
