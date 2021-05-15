@@ -31,7 +31,7 @@
   <section id="container">
     <div class="landing-main-section main">
       <div class="shadow-chart">
-        <h2>Top Rated Games of the year <img src="<?php echo constant('URL') ?>public/img/fire.png" width="25em" alt="fire"></h2>
+        <h2>Top Rated Games of the year <img src="<?php echo constant('URL') ?>public/img/fire.png" width="5%" alt="fire"></h2>
         <h3>1 <span class="game-title">The Last of Us Part II</span></h3>
         <h3>2 <span class="game-title">Hades</span></h3>
         <h3>3 <span class="game-title">Ghosts of Tsushima</span></h3>
