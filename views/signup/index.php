@@ -46,6 +46,7 @@
     </form>
   </section>
   <?php require 'views/footer.php' ?>
+  <script src="<?php echo constant('URL') ?>public/js/main.js"></script>
 </body>
 
 </html>

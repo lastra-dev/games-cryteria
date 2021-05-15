@@ -23,6 +23,7 @@
   </section>
   <div class="error-page-hand"></div>
   <?php require 'views/footer.php' ?>
+  <script src="<?php echo constant('URL') ?>public/js/main.js"></script>
 </body>
 
 </html>

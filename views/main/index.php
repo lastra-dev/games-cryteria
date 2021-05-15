@@ -28,7 +28,7 @@
 <body class="container full-height-grow">
   <?php require 'views/header.php' ?>
   <section class="landing-main-section">
-    <div class="landing-page-chart">
+    <div class="shadow-chart">
       <h2>Top Rated Games of the year <img src="<?php echo constant('URL') ?>public/img/fire.png" width="25em" alt="fire"></h2>
       <h3>1 <span class="game-title">The Last of Us Part II</span></h3>
       <h3>2 <span class="game-title">Hades</span></h3>
@@ -38,15 +38,13 @@
       <h3>6 <span class="game-title">Animal Crossing: New Horizons</span></h3>
       <h3>7 <span class="game-title">Genshin Impact</span></h3>
     </div>
-    <div class="msg-img">
-      <div class="call-to-action">
-        <h1 class="title">
-          Rate and review <span class="games-word">games</span><br />
-          in a trusted way.
-          <img src="<?php echo constant('URL') ?>public/img/thumbsup.png" width="60em" alt="thumbsup" />
-        </h1>
-        <a href="<?php echo constant('URL') ?>home" class="btn">Get Started</a>
-      </div>
+    <div class="call-to-action">
+      <h1 class="title">
+        Rate and review <span class="games-word">games</span><br />
+        in a trusted way.
+        <img src="<?php echo constant('URL') ?>public/img/thumbsup.png" width="8%" alt="thumbsup" />
+      </h1>
+      <a href="<?php echo constant('URL') ?>home" class="btn">Get Started</a>
     </div>
   </section>
   <div class="landing-page-cat"></div>
