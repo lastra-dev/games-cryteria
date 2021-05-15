@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/normalize.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/main.css" />
   <link rel="stylesheet" href="<?php echo constant('URL') ?>public/css/index.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
   <meta name="theme-color" content="#fafafa" />
 </head>
