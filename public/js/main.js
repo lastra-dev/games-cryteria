@@ -5,6 +5,13 @@ const navSlide = () => {
   burger.addEventListener("click", () => {
     //Toggle Nav
     nav.classList.toggle("nav-active");
+    //Animate Modal
+    if (nav.style.animation == "") {
+      nav.style.animation = `navModalFadeIn 0.5s ease-in`;
+    } else {
+      nav.style.animation = `navModalFadeOut 0.5s ease-in`;
+      setTimeout(() => (nav.style.animation = ""), 500);
+    }
     //Animate Links
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
