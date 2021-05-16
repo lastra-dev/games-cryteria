@@ -21,6 +21,7 @@
     <div class="about-main-section main">
       <form class="shadow-chart">
         <h3>About us</h3>
+        <br>
         <p>
           We are a group of friends with a passion for video games, we are
           creating this website in order to have a page where people can share

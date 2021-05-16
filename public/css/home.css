@@ -1,5 +1,5 @@
 .home-main-section {
-  padding: 2vw;
+  padding: 1vw 2vw 2vw 2vw;
 }
 
 .shadow-chart {
@@ -103,6 +103,9 @@ span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home-main-section {
+    padding: 2vw;
+  }
   .shadow-chart {
     height: 72vh;
   }

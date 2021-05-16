@@ -7,7 +7,7 @@
 }
 
 .blog-main-section {
-  padding: 2vw;
+  padding: 1vw 2vw 2vw 2vw;
 }
 
 ul {
@@ -35,10 +35,14 @@ li a {
     height: 72vh;
   }
 
-  .art{
+  .art {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+
+  .blog-main-section {
+    padding: 2vw;
   }
 }
