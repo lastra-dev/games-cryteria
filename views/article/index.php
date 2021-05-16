@@ -17,30 +17,33 @@
   <script src="https://kit.fontawesome.com/ebb32ee94c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="container full-height-grow">
+<body>
   <?php require 'views/header.php' ?>
-  <section class="article-section">
-    <div class="shadow-chart">
-      <h1><?php echo $this->data->title ?></h1>
-      <div class="cuerpo">
-        <?php
-        echo $this->data->body
-        ?>
-      </div>
-      <div class="image">
-        <img src="<?php echo $this->data->image ?>" width="50%" alt="Blog image">
-      </div>
-      <div class="share">
-        <div class="subtitle"> Share </div>
-        <div class="social-icons">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-whatsapp-square"></i>
+  <section id="container">
+    <div class="article-main-section main">
+      <div class="shadow-chart ">
+        <h1 class="art-title"><?php echo $this->data->title ?></h1>
+        <div class="art-body">
+          <?php
+          echo $this->data->body
+          ?>
+        </div>
+        <div class="image">
+          <img src="<?php echo $this->data->image ?>" width="50%" alt="Blog image">
+        </div>
+        <div class="share">
+          <div class="subtitle"> Share </div>
+          <div class="social-icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-whatsapp-square"></i>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <?php require 'views/footer.php' ?>
+  <script src="<?php echo constant('URL') ?>public/js/main.js"></script>
 </body>
 
 </html>

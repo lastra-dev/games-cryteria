@@ -16,64 +16,64 @@
   <script src="https://kit.fontawesome.com/ebb32ee94c.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="container full-height-grow">
-  <?php
-  require 'views/header.php'
-  ?>
-  <section class="home-main-section">
-    <div class="shadow-chart">
-      <form action="<?php echo constant('URL') ?>home/custom_search" class="first-row">
-        <div>
-          <label for="search-input">Rated Games</label>
-          <input type="search" placeholder="Search..." name="search" id="search-input" />
-        </div>
-        <div id="filters">
-          <label for="filter-toggler">Filter</label>
-          <input id="filter-toggler" type="image" src="<?php echo constant('URL') ?>public/img/options.png">
-        </div>
-      </form>
-      <div class="second-row">
-        <?php
-        foreach ($this->games_data['results'] as $game) {
-        ?>
-          <div class="game">
-            <a href="<?php
-                      echo constant('URL') . 'game?gameId=' . $game['id'];
-                      ?>">
-              <img src="<?php echo $game['background_image'] ?>" alt="Game Image">
-            </a>
-            <span><?php echo $game['name'] ?></span>
-            <span>
-              <?php
-              $output = "Not rated yet";
-              foreach ($this->ratings as $r) {
-                if ($r->id == $game['id']) {
-                  $rating = $r->rating;
-                  $output = 'GC Rating: ' . $rating . '/5';
-                  break 1;
-                } else {
-                  $rating = 0;
-                }
-              }
-              echo $output;
-              ?>
-            </span>
-            <span class="stars">
-              <?php
-              $checkedStar = "<span class='fas fa-star checked'></span>";
-              $star = "<span class='fas fa-star'></span>";
-              echo str_repeat($checkedStar, $rating);
-              echo str_repeat($star, 5 - floor($rating));
-              ?>
-            </span>
+<body>
+  <?php require 'views/header.php' ?>
+  <section id="container">
+    <div class="home-main-section main">
+      <div class="shadow-chart">
+        <form action="<?php echo constant('URL') ?>home/custom_search" class="first-row">
+          <div id="search">
+            <label for="search-input">Rated Games</label>
+            <input type="search" placeholder="Search..." name="search" id="search-input" />
           </div>
-        <?php  } ?>
+          <div id="filters">
+            <span id="filter">Filter</span>
+            <input id="filter-toggler" type="image" src="<?php echo constant('URL') ?>public/img/options.png">
+          </div>
+        </form>
+        <div class="second-row">
+          <?php
+          foreach ($this->games_data['results'] as $game) {
+          ?>
+            <div class="game">
+              <a href="<?php
+                        echo constant('URL') . 'game?gameId=' . $game['id'];
+                        ?>">
+                <img src="<?php echo $game['background_image'] ?>" alt="Game Image">
+              </a>
+              <span><?php echo $game['name'] ?></span>
+              <span>
+                <?php
+                $output = "Not rated yet";
+                foreach ($this->ratings as $r) {
+                  if ($r->id == $game['id']) {
+                    $rating = $r->rating;
+                    $output = 'GC Rating: ' . $rating . '/5';
+                    break 1;
+                  } else {
+                    $rating = 0;
+                  }
+                }
+                echo $output;
+                ?>
+              </span>
+              <span class="stars">
+                <?php
+                $checkedStar = "<span class='fas fa-star checked'></span>";
+                $star = "<span class='fas fa-star'></span>";
+                echo str_repeat($checkedStar, $rating);
+                echo str_repeat($star, 5 - floor($rating));
+                ?>
+              </span>
+            </div>
+          <?php  } ?>
+        </div>
+        <div id="rawg">Powered by RAWG</div>
       </div>
-      <div id="rawg">Powered by RAWG</div>
-    </div>
     </div>
   </section>
   <?php require 'views/footer.php' ?>
+  <script src="<?php echo constant('URL') ?>public/js/main.js"></script>
 </body>
 
 </html>

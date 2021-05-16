@@ -7,17 +7,23 @@ body {
 }
 
 .about-main-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1vw 2vw 2vw 2vw;
 }
 
-.about-main-section .shadow-chart {
-  margin-top: 2vh;
+.shadow-chart {
   display: flex;
   flex-direction: column;
-  height: 80vh;
   overflow-y: scroll;
+  height: 80vh;
 }
 
+@media screen and (max-width: 768px) {
+  .about-main-section {
+    padding: 2vw;
+  }
+
+  .shadow-chart {
+    align-items: center;
+    height: 72vh;
+    text-align: center;
+  }

@@ -7,6 +7,10 @@
   overflow-y: scroll;
 }
 
+.article-main-section {
+  padding: 2vw;
+}
+
 .share {
   display: flex;
   flex-direction: column;
@@ -22,4 +26,23 @@
 
 .image img {
   border-radius: 5px;
+}
+
+#list {
+  margin-left: 16px;
+}
+
+.art-body {
+  text-align: justify;
+}
+
+.art-title {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .shadow-chart {
+    align-items: center;
+    height: 72vh;
+  }
 }

@@ -3,58 +3,53 @@
   align-items: stretch;
   justify-content: space-between;
   align-self: center;
-  flex-grow: 1;
-}
-
-.landing-main-section .msg-img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  margin-top: 5em;
 }
 
 .landing-main-section .call-to-action {
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
-  margin-right: 9em;
-  z-index: 2;
+  margin-top: 12em;
+  margin-right: 6em;
+}
+
+.landing-main-section .btn {
+  width: 9em;
 }
 
 .landing-page-cat {
   position: absolute;
   width: 45%;
-  height: 50%;
+  height: 40%;
   background-image: url(../img/cat.png);
   background-repeat: no-repeat;
-  background-size: 22em;
+  background-size: 45%;
   background-position: bottom right;
   bottom: 0vw;
-  right: 3vw;
-  z-index: 1;
+  right: 0vw;
+  z-index: -1;
 }
 
-/* TODO pasar a main.css, se puede reutilizar */
-/* en los demás cuadros */
-.landing-main-section .landing-page-chart {
+.shadow-chart {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  flex-grow: 0.5;
+  width: 35vw;
+  height: 65vh;
   padding: 2em;
-  background-color: #171b2e;
-  border-radius: 15px;
-  box-shadow: 11px 6px 4px 5px rgba(0, 0, 0, 0.25);
-  margin-top: 3em;
-  margin-left: 6em;
+  margin-top: 4em;
+  margin-left: 8em;
 }
 
-.landing-main-section .landing-page-chart h3 {
+.shadow-chart h2 {
+  font-size: 1.5vw;
+}
+
+.shadow-chart h3 {
   border-radius: 5px;
   background-color: #1e233f;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   padding: 0.1em 0.5em 0.1em 0.5em;
-  margin: 11px;
+  font-size: 1.2vw;
 }
 
 .games-word {
@@ -67,73 +62,41 @@
   font-weight: 100;
 }
 
-@media (max-width: 950px) {
-  .landing-page-cat {
+.title {
+  font-weight: 1000;
+  font-size: 3vw;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .title {
+    font-size: 5vw;
+  }
+  .shadow-chart {
     display: none;
   }
+  .landing-page-cat {
+    background-size: 70%;
+  }
+
   .landing-main-section {
     justify-content: center;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .landing-page-cat {
+    background-size: 100%;
+  }
+
+  .title {
+    font-size: 8vw;
+    text-align: center;
+  }
+
   .landing-main-section .call-to-action {
-    margin-right: 0em;
-  }
-}
-
-@media (max-width: 1200px) {
-  .landing-main-section .landing-page-chart {
-    display: none;
-  }
-  .msg-img {
-    font-size: 1.5em;
-  }
-}
-
-@media (max-width: 800px) {
-  .msg-img {
-    font-size: 1.3em;
-  }
-}
-
-@media (max-width: 660px) {
-  .msg-img {
-    font-size: 0.8em;
-  }
-  .msg-img img {
-    width: 1em;
-  }
-  .msg-img .call-to-action {
-    margin-top: 10em;
-  }
-}
-
-@media (max-width: 1350px) {
-  .msg-img .call-to-action {
-    font-size: 0.8em;
-  }
-}
-
-@media (max-height: 750px) {
-  .landing-main-section .landing-page-chart {
-    flex-grow: 0;
-  }
-  .landing-page-cat {
-    width: 35%;
-    height: 40%;
-    background-size: 19em;
-  }
-}
-
-@media (max-height: 700px) {
-  .landing-page-cat {
-    display: none;
-  }
-  .landing-main-section .landing-page-chart {
-    display: none;
-  }
-}
-
-@media (min-height: 800px) {
-  .landing-main-section .landing-page-chart {
-    margin-top: 8em;
+    margin: 8em 0em 0em 0em;
+    align-items: center;
   }
 }
