@@ -2,8 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
   overflow-y: scroll;
+  height: 80vh;
+}
+
+.blog-main-section {
+  padding: 2vw;
 }
 
 ul {
@@ -12,7 +16,7 @@ ul {
 
 .articles li {
   font-size: 17px;
-  margin-bottom: 3vh;
+  margin: 3vh;
 }
 
 li img {
@@ -22,5 +26,19 @@ li img {
 
 li a {
   text-decoration: none;
-  color: #ff006b;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .shadow-chart {
+    align-items: center;
+    height: 72vh;
+  }
+
+  .art{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }

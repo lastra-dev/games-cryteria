@@ -20,22 +20,24 @@
 <body>
   <?php require 'views/header.php' ?>
   <section id="container">
-    <div class="shadow-chart main">
-      <h1><?php echo $this->data->title ?></h1>
-      <div class="cuerpo">
-        <?php
-        echo $this->data->body
-        ?>
-      </div>
-      <div class="image">
-        <img src="<?php echo $this->data->image ?>" width="50%" alt="Blog image">
-      </div>
-      <div class="share">
-        <div class="subtitle"> Share </div>
-        <div class="social-icons">
-          <i class="fab fa-facebook-square"></i>
-          <i class="fab fa-twitter-square"></i>
-          <i class="fab fa-whatsapp-square"></i>
+    <div class="article-main-section main">
+      <div class="shadow-chart ">
+        <h1><?php echo $this->data->title ?></h1>
+        <div>
+          <?php
+          echo $this->data->body
+          ?>
+        </div>
+        <div class="image">
+          <img src="<?php echo $this->data->image ?>" width="50%" alt="Blog image">
+        </div>
+        <div class="share">
+          <div class="subtitle"> Share </div>
+          <div class="social-icons">
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-whatsapp-square"></i>
+          </div>
         </div>
       </div>
     </div>
