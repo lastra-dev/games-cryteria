@@ -12,6 +12,7 @@ class Article_data
     $this->article1->keywords = "Super Mario 64, Metal Slug, Contra, Mega-Man, Street Figter, Game Blog, Blog de Juegos";
     $this->article1->author = "Eduardo Daniel Hernández Flores";
     $this->article1->body = "
+<br>
 <p>En muchos de nosotros los juegos forman una parte de nuestras vidas, incluso 
 muchos de nosotros recordamos algunos juegos con gran nostalgia, ya que posiblemente
  fue nuestro primer juego o uno de los primeros los cuales nos lleno que horas y
@@ -57,6 +58,7 @@ uno lo recordara con gran nostalgia, un titulo que te entregaba horas incontable
     $this->article2->description = "Los videojuegos ya no son solo un método de entretenimiento, han evolucionado y ahora existen en distintas áreas.";
     $this->article2->keywords = "Educación, Psicología, Ambientes Empresariales, Arquitectura, videojuegos, games blog, rating";
     $this->article2->body = "
+<br>
 <p>“Un videojuego es una aplicación interactiva orientada al entretenimiento
  que a través de ciertos mandos o controles permite simular experiencias en la
  pantalla de un televisor, un ordenador u otro dispositivo electrónico.”</p>

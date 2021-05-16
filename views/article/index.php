@@ -22,8 +22,8 @@
   <section id="container">
     <div class="article-main-section main">
       <div class="shadow-chart ">
-        <h1><?php echo $this->data->title ?></h1>
-        <div>
+        <h1 class="art-title"><?php echo $this->data->title ?></h1>
+        <div class="art-body">
           <?php
           echo $this->data->body
           ?>

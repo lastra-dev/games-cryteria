@@ -36,7 +36,9 @@
           información acerca de esos videojuegos que les interesen, o de los cuales
           quieran una opinión extra para decidir si comprar y jugar tal juego.
         </p>
+        <br>
         <h3>Credits</h3>
+        <br>
         <a href='https://www.vecteezy.com/free-vector/game-controller'>Game Controller Vectors by Vecteezy</a>
         <a href="https://dribbble.com/shots/6898510-Cat-Gaming">Gamer Cat by catalyst</a>
         <a href="https://es.vecteezy.com/vectores-gratis/dise%C3%B1o">Diseño Vectores por Vecteezy</a>
