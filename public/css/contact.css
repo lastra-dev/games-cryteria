@@ -7,27 +7,20 @@ body {
 }
 
 .contact-main-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  padding: 3vw 3vw 3vw 17vw;
 }
 
-.contact-main-section .shadow-chart {
-  margin-top: 7vh;
+.shadow-chart {
   display: flex;
   flex-direction: column;
-  width: 60vw;
+  width: 80%;
 }
 
-@media (max-width: 1000px) {
-  .contact-main-section .shadow-chart {
-    width: 80vw;
+@media screen and (max-width: 768px) {
+  .contact-main-section {
+    padding: 3vw;
   }
-}
-
-@media (max-width: 660px){
-  .contact-main-section .shadow-chart {
-    margin-top: 0vh;
+  .shadow-chart {
+    width: 100%;
   }
 }
