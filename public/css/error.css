@@ -37,7 +37,7 @@
   background-repeat: no-repeat;
   background-size: 14vw;
   background-position: bottom right;
-  top: 16vw;
+  top: 15vw;
   right: 0vw;
   z-index: -1;
 }
@@ -46,17 +46,28 @@
   font-size: 1vw;
 }
 
-@media (max-width: 660px) {
+@media screen and (max-width: 1024px) {
+  .error-page-hand {
+    top: 13vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .game-over {
     display: none;
+  }
+  .error-section .call-to-action {
+    align-items: center;
   }
   .error-section .call-to-action h1 {
     font-size: 7vw;
   }
-  .error-page-hand {
-    display: none;
-  }
   .btn {
     font-size: 3vw;
+  }
+
+  .error-page-hand {
+    background-size: 30vw;
+    top: 36vw;
   }
 }
