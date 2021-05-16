@@ -24,7 +24,9 @@
       <div class="shadow-chart">
         <div class="column">
           <div class="game-title"><?php echo $this->data['name'] ?></div>
-          <div> <?php echo $this->data['description'] ?></div>
+          <br>
+          <div id="description"> <?php echo $this->data['description'] ?></div>
+          <br>
           <div class="row">
             <div class="released-date">
               <div class="subtitle">
@@ -81,7 +83,7 @@
           </div>
         </div>
         <div class="second-column">
-          <img width="250px" src="<?php echo $this->data['background_image'] ?>" alt="">
+          <img width="250vw" src="<?php echo $this->data['background_image'] ?>" alt="Game Img">
           <div class="gc-rating">
             <div class="subtitle">
               Games Cryteria Rating
@@ -113,7 +115,7 @@
             <div class="subtitle">
               Metacritic rating
             </div>
-            <div>
+            <div class="meta-number">
               <?php echo $this->data['metacritic'] ?>
             </div>
           </div>

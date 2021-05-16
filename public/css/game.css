@@ -2,28 +2,33 @@ body {
   background-size: cover;
 }
 
-#more {
-  display: none;
+.game-main-section {
+  padding: 2vw;
+}
+
+.shadow-chart {
+  display: flex;
+  flex-direction: row;
+  overflow-y: scroll;
+  height: 80vh;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 2vw 0vw 0vw 0vw;
+  margin-top: 2vw;
 }
 
 .column,
 .second-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: 1vw;
 }
 
 .second-column {
-  height: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -38,29 +43,9 @@ body {
   border-radius: 5px;
 }
 
-.shadow-chart {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  overflow-y: scroll;
-  height: 85vh;
-}
-
-.main-header {
-  width: 100%;
-}
-
-.game-main-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .game-title {
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 30px;
 }
 
 .stars a {
@@ -103,4 +88,31 @@ body {
 .feedback {
   font-weight: bold;
   color: #ff006b;
+}
+
+#description {
+  text-align: justify;
+}
+
+.meta-number {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .shadow-chart {
+    align-items: center;
+    height: 72vh;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .second-column img {
+    width: 40%;
+  }
+
+  .second-column {
+    margin-top: 4vh;
+    min-height: 45vh;
+  }
 }
