@@ -22,12 +22,12 @@
     <div class="home-main-section main">
       <div class="shadow-chart">
         <form action="<?php echo constant('URL') ?>home/custom_search" class="first-row">
-          <div>
+          <div id="search">
             <label for="search-input">Rated Games</label>
             <input type="search" placeholder="Search..." name="search" id="search-input" />
           </div>
           <div id="filters">
-            <label for="filter-toggler">Filter</label>
+            <span id="filter">Filter</span>
             <input id="filter-toggler" type="image" src="<?php echo constant('URL') ?>public/img/options.png">
           </div>
         </form>
@@ -70,7 +70,6 @@
         </div>
         <div id="rawg">Powered by RAWG</div>
       </div>
-    </div>
     </div>
   </section>
   <?php require 'views/footer.php' ?>
