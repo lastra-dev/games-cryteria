@@ -17,11 +17,11 @@
 
 </head>
 
-<body class="container full-height-grow">
+<body>
   <?php require 'views/header.php' ?>
   <section id="container">
     <div class="signup-main-section main">
-      <form method="POST" action="<?php echo constant('URL') ?>signup/register_account" class="shadow-chart">
+      <form class="shadow-chart" method="POST" action="<?php echo constant('URL') ?>signup/register_account">
         <div class="sign-text">Sign up to Games Cryteria</div>
         <div class="feedback"><?php echo $this->feedback ?></div>
         <div class="sign-input-group">
