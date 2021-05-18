@@ -2,6 +2,11 @@
   font-size: 22px;
 }
 
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
 .shadow-chart {
   height: 80vh;
   overflow-y: scroll;

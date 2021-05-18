@@ -99,6 +99,11 @@ body {
   font-size: 16px;
 }
 
+.social-icons a {
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   .game-main-section {
     padding: 2vw;

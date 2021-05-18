@@ -5,7 +5,7 @@ class Article_data
   public function __construct()
   {
     $this->article1 = new Article();
-    $this->article1->id = 1;
+    $this->article1->id = 0;
     $this->article1->title = "Juegos que Marcaron Infancias";
     $this->article1->image = "https://i.imgur.com/jQp4gVl.jpg";
     $this->article1->description = "En muchos de nosotros los juegos forman una parte de nuestras vidas, por eso te traemos Juegos que recordaras con Nostalgia.";
@@ -52,7 +52,7 @@ uno lo recordara con gran nostalgia, un titulo que te entregaba horas incontable
 ";
 
     $this->article2 = new Article();
-    $this->article2->id = 0;
+    $this->article2->id = 1;
     $this->article2->title = "¿Qué representan los videojuegos hoy en día?";
     $this->article2->image = "https://i.imgur.com/QA5aG6j.jpg";
     $this->article2->description = "Los videojuegos ya no son solo un método de entretenimiento, han evolucionado y ahora existen en distintas áreas.";

@@ -41,9 +41,15 @@
                 Share
               </div>
               <div class="social-icons">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-whatsapp-square"></i>
+                <a href="<?php echo "https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fgamescryteria.com%2Fgame%3FgameId%3D" . $this->data['id'] . "&amp;src=sdkpreparse" ?>">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+                <a href="<?php echo "https://twitter.com/intent/tweet?url=https://gamescryteria.com/game?gameId=" . $this->data['id'] . "&text=Review%20this%20game%20at%20Games%20Cryteria!" ?>">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="<?php echo "mailto:info@example.com?&subject=&cc=&bcc=&body=https://gamescryteria.com/game?gameId%3D" . $this->data['id'] ?>">
+                  <i class="fas fa-envelope-square"></i>
+                </a>
               </div>
             </div>
           </div>
