@@ -20,7 +20,7 @@ Clone this repository
 Install dependencies with
 #### ` php composer.phar install `  
 
-Configure DB using db_template.sql and config.php inside config folder
+Configure DB using db_template.sql and config.php inside the config folder
 
 Use .env.example to create a .env file and change its values  
 #### ` RAWG_KEY="abc123"  DB_PASS="abc123" `
