@@ -14,16 +14,21 @@
 
 ## Installation
 
-Clone this repository  
-#### ` git clone https://github.com/lastra-dev/games-cryteria.git `  
+Install [xampp](https://www.apachefriends.org/es/index.html)
+
+Clone this repository inside xampp's htdocs  
+` git clone https://github.com/lastra-dev/games-cryteria.git `  
 
 Install dependencies with
-#### ` php composer.phar install `  
+` php composer.phar install `  
 
-Configure DB using db_template.sql and config.php inside the config folder
+Import database using db_template.sql.
 
 Use .env.example to create a .env file and change its values  
-#### ` RAWG_KEY="abc123"  DB_PASS="abc123" `
+` RAWG_KEY="abc123"  DB_PASS="abc123" `
+
+Run your xampp instance and go to
+http://localhost/games-cryteria/
 
 ## License
 

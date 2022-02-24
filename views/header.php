@@ -8,6 +8,7 @@
         <li><a href="<?php echo constant('URL') ?>home">Home</a></li>
         <li><a href="<?php echo constant('URL') ?>blog">Blog</a></li>
         <li><a target="_blank" href="https://discord.gg/fea98vxckk">Discord</a></li>
+        <li><a target="_blank" href="https://github.com/lastra-dev/games-cryteria">Github</a></li>
         <?php
         if (isset($_SESSION['id'])) {
         ?>
